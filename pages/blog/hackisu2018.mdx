@@ -1,0 +1,244 @@
+---
+layout: "articles"
+title: "HackISU 2018"
+publishedAt: "2019-01-31"
+summary: "Iowa State’s 10th annual hackathon. I learned a lot from my first hackathon and this time"
+image: "https://cdn-images-1.medium.com/max/1600/1*MmRH6IG-Oaxbv3VKphoQkQ.png"
+---
+
+![](https://cdn-images-1.medium.com/max/1600/1*MmRH6IG-Oaxbv3VKphoQkQ.png)
+
+### HackISU 2018
+
+Iowa State’s 10th annual hackathon. I learned a lot from my first hackathon and
+this time I made sure that I was more prepared and utilized what I had learned.
+First off I found some friends for a team ahead of time. I organized a meeting
+with my two teammates Ben and Nate the Wednesday before the event where we
+looked through all the prize categories and discussed what we were going to
+make. We wanted to win… anything so when we were going through the list prize
+categories we wanted to make a project that hit as many of the categories as
+possible. We ended up deciding on a machine vision platform that tracked a
+person and allowed them to interact with elements in the scene. Before the
+event, I went to Best Buy to get a webcam for our project and one of my
+teammates let us borrow his TV. Having an idea of what you are doing ahead of
+time is very helpful so you can get parts that you need.
+
+![](https://cdn-images-1.medium.com/max/1600/1*tq-PQEFuktSzYYeUY6Y1Ow.jpeg)
+
+<span className="figcaption_hack">
+  One of the student leaders giving the opening presentation
+</span>
+
+The day of the event finally came and after className that Friday I got one of my
+teammates and went to the event the other had some work to do and was coming
+later. The hackathon was hosted at the Vermeer Applied Technology Hub located a
+few miles from campus. When we got there the place was packed. Everyone was
+bringing boxes full to TV’s, computers, extra cables, and everything you could
+imagine someone bringing to an event like this. We got there early because we
+wanted to get a good table, after signing in we found a table by the wall that
+we liked and started setting up. After getting our stuff situated we made our
+way around the room to the different tables for the sponsors. Hackathons are a
+great way to talk to employers from the industry as they attend these events and
+are looking to talk to students about potential carrier opportunities. These
+companies also usually have a bunch of free stuff such as t-shirts and stickers!
+
+![](https://cdn-images-1.medium.com/max/1600/1*R9SkZRLFE6qrroRf9Eb3VQ.jpeg)
+
+<span className="figcaption_hack">
+  My teammate Nate with some guy we just met
+</span>
+
+After making the rounds to the different companies and the opening ceremony we
+created a GitHub repo and got to work. First, we figured out what we needed to
+accomplish for the project to work. We needed to have a physics engine, a face
+tracking system, and a server set up to host our website. We used[
+HTML5BoilerPlate](https://html5boilerplate.com/) to make a template for our
+project and decided to make everything in Javascript because that was what we
+were all most comfortable using. My job was to set up the face tracking system.
+I searched online and found a few libraries that looked promising
+[tracking.js](https://trackingjs.com/) was what I tried first… more on that
+later. Ben was working on integrating the physics, he found a lightweight but
+powerful physics engine [matter.js](http://brm.io/matter-js/), and Nate was
+looking into how we could host our site on Google Cloud.
+
+![](https://cdn-images-1.medium.com/max/1600/1*6id0YeC3BlpckSfbO16K3w.jpeg)
+
+<span className="figcaption_hack">Nate and Ben competing at our game</span>
+
+I started looking at the demos for the tracking framework and tried implementing
+it into a webpage I made. My problem was that because the engine rendered the
+webcam image on an HTML canvas the sizing was not responsive. The tracking
+engine I was using was just not working the way I wanted it to so I went looking
+to see if there was anything else out there that I could use. I found a
+different tracking engine called [pico.js](https://tkv.io/posts/picojs-intro/)
+this worked great. The face detection was very fast and had easy to read code to
+better integrate with our system. We were still having a problem with the
+resolution though so I decided to hardcode the resolution to the size of the TV
+that we were using and that mostly fixed the problem.
+
+![](https://cdn-images-1.medium.com/max/1600/1*tQ75vJqMZtxSR4VGIO1jMQ.jpeg)
+
+<span className="figcaption_hack">Me testing the image recognition</span>
+
+Eventually, towards the end of the first night, I got the facial recognition
+working and Ben got the physics working now the next step was to integrate the
+physics with the face tracking. We worked on this for a while but it was getting
+late and my teammates thought we should go to sleep but I wanted to keep
+working. I took them back to the dorms and came back to work. It was a long
+night but I eventually got the physics working with the face tracking. We had a
+physics object stuck to the circle that the facial tracking drew and the object
+would follow the player whenever the tracking updated which was up to 200 times
+a second.
+
+![](https://cdn-images-1.medium.com/max/1600/1*-BRhWkg7qA-SkexRJnxL3A.jpeg)
+
+<span className="figcaption_hack">
+  I drank way too much caffeine that night
+</span>
+
+That night was a success! I got the entire project functioning the way that we
+intended now we just needed to get the gamification implemented to show off what
+we did. That morning after my teammates came back we discussed what more we
+needed to finish. We decided to implement 4 game modes; one with objects
+continually falling and the player could move them with their head; another
+where you were timed to get as many off as possible; another where you had to
+get 10 off as fast as possible; and lastly a version of pong where each player
+controlled a paddle and moved it using their head.
+
+![](https://cdn-images-1.medium.com/max/1600/1*RJOpGpZ-Jc8N636WKYvWRg.jpeg)
+
+<span className="figcaption_hack">the working physics and face tracking</span>
+
+At this point, we tried to deploy our project on Google Cloud but were having
+problems when we tried to re-upload our repository. It was stuck to the first
+files that we uploaded and didn't update. Nate ended up calling Google and after
+an hour on the phone, we ended up giving up on google cloud and decided to host
+our project on GitHub pages. At this point, we also decided to sign up for a
+domain name for our project to be entered into the best domain name prize. We
+found a few names that were not taken and we got two of them. notakinect.com and
+[letsuseyourhead.com](https://letsuseyourhead.com/). Nate then started working
+on the non-game related elements such as the menu, game over and winning pages
+as Ben and I continued working on the main mechanics.
+
+![](https://cdn-images-1.medium.com/max/1600/1*RWJfchf-OcO3uQtWRY3_xg.jpeg)
+
+<span className="figcaption_hack">Donuts for breakfast!</span>
+
+As things were coming together we started having problems with merging things in
+GitHub. A few times we needed to entirely delete the project from our computers
+and try to fix it. We were all working on the master branch and not merging
+properly so we were running into issues when we were pushing our commits.
+Eventually, we worked out our issues and finished 3 of the 4 game modes. The
+last implementation was the hardest because of adding multiple players. We
+created two physics elements and only tracked each one on their own side of the
+screen and locked their x-axis so they were only able to move up and down.
+
+<span className="figcaption_hack">The team next to us playing face pong</span>
+
+The project was now fully functional and ready for finishing touches. We thought
+that publishing the winners score to twitter would be a fun thing to implement
+plus it was a price category. [@NKinect](https://twitter.com/NKinect) was the
+account we made and integrated into our project. When you won in the Face Pong
+mode it would send out a tweet saying that you won.
+
+![](https://cdn-images-1.medium.com/max/1600/1*uZPEbrN6BAzi9E7vEFC4fA.jpeg)
+
+<span className="figcaption_hack">
+  We got a picture of our team in front of the HackISU banner
+</span>
+
+At this point, our project was ready for submission we created the [DevPost
+](https://devpost.com/software/hungryhungryhacker)page and added all of the
+categories we were able to integrate into our project. Machine Vision was the
+strongest point of our project, it was also very interactive big and fun to
+play. Below is our DevPost listing.
+
+#### hungryhungryhacker
+
+> For our project, we wanted to create an original, plug-and-play game that anyone
+> could use with a laptop and internet access. We created a website that includes
+> colorful navigation and a few different game modes, including our own version of
+> motion tracking pong! To motion track, we used a javascript library that was
+> incredibly quick, refreshing at 200 times per second, and used a **machine
+> vision API**. The rest of the pages and animations were done in HTML, CSS, and
+> Javascript, with some **JQuery**implementation. Our website is stored in the
+> cloud service **Google Cloud**, both so that it wouldn’t be running on a
+> localhost, meaning we could turn our laptop off and still have a website up, but
+> it also meant we could manage faster interactions between the user and the
+> interface.
+
+Jonathan
+
+> I implemented the machine vision API through java script. I also helped create
+> an environment that led to the best use of my teams time and the best ideas. I
+> helped integrate the physics engine with the face tracking API as well.
+
+Nate
+
+> I worked on the domain in domain.com and cloud integration on Google Cloud for
+> our website, as well as working on the main navigation pages in CSS and HTML.
+
+Ben
+
+> I worked on implementing the physics engine for each game mode along with the
+> logic of each game mode. This includes deciding the rate at which the objects
+> fall, the logic for collisions between objects, deleting and creating new
+> objects when appropriate, and more.
+
+![](https://cdn-images-1.medium.com/max/1600/1*XzL7aSHw4-p_Z6rQn7itVA.jpeg)
+
+<span className="figcaption_hack">
+  We did have a lot of fun playing our game
+</span>
+
+That night they also ordered way too much pizza which was the best! We each got
+our own pizza for dinner… way too much pizza and caffeine were consumed. That
+after we submitted our project we went around and looked at what everyone else
+was making, there were some incredible projects that were made, from a robot
+that shoots a nerf gun to a procedurally generated co-op horror game using an
+oculus rift, there were a lot of cool projects. My team decided to get some
+sleep that night so we could be rested for the judging tomorrow.
+
+Next morning… the alarm goes off… snooze… we wake up late and rush from the dorm
+over to the event and frenetically set up our table and go over to the students
+running the event and try to get judges to come over to our table. The judges
+eventually come over and everything is fine but arriving late was definitely not
+great. After the judging is over we all go over to the stage for the prizes and
+find out WE WON!
+
+![](https://cdn-images-1.medium.com/max/1600/1*VBfTmM65NT5QNGRdaYxehQ.jpeg)
+
+<span className="figcaption_hack">
+  Nate had to work but Ben and I Proudly got up and accepted our award
+</span>
+
+We won best domain name, not a technical award but an award nonetheless. Overall
+this hackathon was great I learned a lot met some new people and even got an
+interview for a job.
+
+During the judging, the recruiters from [Corteva](https://www.corteva.com/) came
+over and asked about our project we demoed and talked through our process and
+how we developed it. They gave us application forms and told us to keep in touch
+with them. I never actually filled out the form but one of the recruiters from
+the event later contacted me on LinkedIn and we set up an interview and this
+summer I’ll be in Des Moines, IA working at Corteva!
+
+---
+
+This hackathon I was much more prepared than the first one and my team did a lot
+right but there is also a lot of room for improvement. First off don’t be late
+for judging. We were not the smartest being late but we were lucky and it worked
+out for us, next time we will wake up much earlier and set more alarms. Another
+thing that we did was try to implement everything we could instead of working
+with a limited amount of technologies that we could easily implement into one
+strong candidate for one prize category. Overall I learned a lot and I can't
+wait for my next Hackathon!
+
+<span className="figcaption_hack">
+  I started talking to a guy with a camera and next thing you know he was
+  interviewing me
+</span>
+
+### Check out the Repository on GitHub
+
+![](https://cdn-images-1.medium.com/max/1600/1*lgOdeMk8eEXaLLnkr-ZwzQ.png)

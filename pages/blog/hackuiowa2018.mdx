@@ -1,0 +1,166 @@
+---
+layout: "articles"
+title: "HackUIowa 2018"
+publishedAt: "2019-01-29"
+summary: "My first hackathon! At the beginning of the school year, I decided to sign up for as many hackathons as I could."
+image: "https://cdn-images-1.medium.com/max/1600/1*aSc4r2HsN03JEt3yStxLKg.png"
+---
+
+![](https://cdn-images-1.medium.com/max/1600/1*aSc4r2HsN03JEt3yStxLKg.png)
+
+### HackUIowa 2018
+
+My first hackathon! At the beginning of the school year, I decided to sign up
+for as many hackathons as I could. The first one on my list to go to was this
+one so that Friday night I got in my car and started the 2-hour drive to the
+University of Iowa. I read about these events but being my first time I really
+had no idea what to expect. I stayed at my parent’s house that Friday night
+close to Iowa City and went to the university first thing Saturday morning for
+the start of the event at 8:45 am.
+
+![](https://cdn-images-1.medium.com/max/1600/1*cv2Nn3AypLbMDxCSCmwjZw.jpeg)
+
+<span className="figcaption_hack">
+  One of the event organizers announcing the sponsors
+</span>
+
+After I checked in I went to go look for a team to work with. Surprisingly there
+were quite a few people from Iowa State at the event. I found a team from Iowa
+State and after the opening ceremony, we got to work.
+
+![](https://cdn-images-1.medium.com/max/1600/1*sLuD-_-xn3sbAobOZT5sjA.jpeg)
+
+<span className="figcaption_hack">Top-down photo of my team at work</span>
+
+My teammates Kyle and Ryan already had an idea of what to make. Our project was
+to gamify exercise by using the time one was on a bike as currency to redeem as
+time spent on the internet. To accomplish what we were trying to make my
+teammates added a revolution sensor to the motor of a bike and hooked it up to a
+Raspberry Pi and created a program in Python to do computations. I created the
+UI using JQuery and a few Javascript libraries.
+
+> Our project was to gamify exercise by using the time one was on a bike as
+> currency to redeem as time spent on the internet.
+
+![](https://cdn-images-1.medium.com/max/1600/1*7Jz4OPELNj3yl5HBpJ2spQ.jpeg)
+
+<span className="figcaption_hack">We only used 3 of the wires</span>
+
+We created a GitHub repository and all started on our own contributions. I first
+started trying to create a site using React and found that learning something
+entirely new in just a few hours is not the best use of time at a Hackathon. I
+started over using what I was familiar with plain Javascript/Html/CSS with
+Jquery to make a responsive site. The purpose of this site was to display the
+information received from the Python server and display this on the screen
+attached to the bike. I found the library [Chart.js](https://www.chartjs.org/)
+and used it as a way to animate and render the responsive graphs for the UI, and
+[Anime.js](https://animejs.com/) to animate everything else.
+
+> I first started trying to create a site using React and found that learning
+> something entirely new in just a few hours is not the best use of time at a
+> Hackathon.
+
+![](https://cdn-images-1.medium.com/max/1600/1*VvTFbNKj5H92rvqXhQHkcg.jpeg)
+
+<span className="figcaption_hack">
+  There was a lot going on at the same time
+</span>
+
+Towards the end of the first day, we both got out parts mostly working. The
+website worked with sample data and the bike produced a working output of
+rotation data. The next step was to get the two parts talking to each other. Our
+server was running using [Flask ](http://flask.pocoo.org/)and we needed to get
+the Python back-end and the Javascript front-end connected using AJAX. We all
+left that night and I went back to my parent’s house that night and instead of
+sleeping, I continued working on the project.
+
+![](https://cdn-images-1.medium.com/max/1600/1*7Np-Ay8rgjwe11y-LUZRWQ.jpeg)
+
+<span className="figcaption_hack">Selfie with my team</span>
+
+Eventually, I figured out our problem. We were doing a few things wrong such as
+file structure and the naming schemes so what I did was create a new project
+that was the simplest possible way to have everything working. I created a
+Repository with the code used for this. [Simple Flask jQuery
+integration](https://github.com/Jonathannsegal/Simple_Flask_jQuery_integration)
+
+![](https://cdn-images-1.medium.com/max/1600/1*hgm8-R1YrQ0_ch6-Z3_9FA.jpeg)
+
+<span className="figcaption_hack">Iowa had plenty of food and coffee</span>
+
+When we got back the next morning we laid out a plan of what we needed to get
+done before 1 pm when hacking ended. We were almost done with our project we
+just needed to integrate what I built over the night into our project and put
+the finishing touches on our project.
+
+![](https://cdn-images-1.medium.com/max/1600/1*_qAbbnt_xNf73pwUIVm5eg.jpeg)
+
+<span className="figcaption_hack">Way to go Iowa for the Popcorn</span>
+
+Everything was connected and working except for one part of the project. The
+computation for the data was not working on the python script. We ended up
+feeding random data to the front end and displaying a console log of the
+rotation directly from the python script.
+
+![](https://cdn-images-1.medium.com/max/1600/1*q4InHwbD__jGHyzDf8mI6g.jpeg)
+
+<span className="figcaption_hack">The Rasberry PI all hooked up</span>
+
+We ended up submitting our project on
+[hackerearth](https://hackuiowa.hackerearth.com/sprints/hackuiowa-1/dashboard/da9328c/submission/)
+without it fully functioning. We called our project Rasberry Pike
+
+#### Raspberry Pike
+
+> The goal of the project was create a correlation between physical work and
+> virtual data flow. With this idea in mind we brainstormed a simple pedal bike
+> connected to a stationary trainer. This trainer would have a IR sensor that
+> would read revolution per second. The sensor connects into a micro controller
+> that has a WiFi adapter to broadcast a WiFi signal that the demo computer would
+> pickup. The micro controller would then throttle bandwidth if the physical work
+> dropped below the set timed threshold
+
+The judges came around and we demoed what we had and explained how our project
+could be used to incentivize exercise and increase physical activity when using
+a computer.
+
+![](https://cdn-images-1.medium.com/max/1600/1*7kDrTMCHX4OTbygL_TyjEg.jpeg)
+
+<span className="figcaption_hack">The event was packed</span>
+
+This event was an incredible learning experience for me. Building a working
+product in a limited amount of time is a great way to learn how to rapidly come
+up with ideas and develop fixes for unforeseen problems.
+
+![](https://cdn-images-1.medium.com/max/1600/1*_g7pQj1udj2cOcb7I7WUWA.jpeg)
+
+<span className="figcaption_hack">
+  Checking out other peoples project is a great way to meet others and see new
+  ideas
+</span>
+
+Going into this I had no idea what to expect but after the event, I know how
+hackathons work. There are a few different objectives one could have when
+attending one of these events.
+
+1.  Obviously winning a prise is a great goal for a team. If you are trying to win
+    something though going into the event you should have a solid idea of what
+    you're making. Prizes are sponsored by different companies and each prize has a
+    different objective and to win you need to incorporate the objective into your
+    project.
+1.  Another objective is to network and find people that have similar interests as
+    you and to have people that you could potentially work on projects with in the
+    future. Also, companies are great to talk to and find places to potentially have
+    a Job/ Internship and show employers what skills you are good at and to see what
+    you can improve on.
+1.  Lastly, you can go just to make something cool with friends, experiment with new
+    technologies and get a whole lot of free stuff.
+
+Obviously, you can do all of these things at a hackathon but knowing what you
+want to accomplish is a great way to set expectations and to know if you had a
+successful event. This was a great first experience for me at a hackathon but it
+defiantly won't be my last!
+
+### **Check out the Repository on GitHub**
+
+![](https://cdn-images-1.medium.com/max/1600/1*YvXMYjngEGydxEHkrnvkLA.jpeg)
