@@ -37,7 +37,7 @@ function Resume({ data }) {
           </Link>
           <Link
             _hover={{ textDecoration: "none" }}
-            href="https://nbviewer.jupyter.org/github/Jonathannsegal/Resume/blob/master/Resume.pdf"
+            href="/static/images/Resume.pdf"
           >
             <Button>PDF</Button>
           </Link>
