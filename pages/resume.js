@@ -37,7 +37,7 @@ function Resume({ data }) {
           </Link>
           <Link
             _hover={{ textDecoration: "none" }}
-            href="/static/images/Resume.pdf"
+            href="/static/images/Jonathan_Segal_Resume.pdf"
           >
             <Button>PDF</Button>
           </Link>
