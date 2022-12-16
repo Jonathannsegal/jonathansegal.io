@@ -1,7 +1,7 @@
 {
     "name": "Jonathan Segal",
     "short_name": "jonathansegal.io",
-    "description": "Student, Traveleler, and Computer enthusiast.",
+    "description": "Phd Student, AR/VR Devloper, and New Yorker.",
     "icons": [
         {
             "src": "/static/favicons/android-chrome-192x192.png",
@@ -14,8 +14,8 @@
             "type": "image/png"
         }
     ],
-    "background_color": "#FFFFFF",
-    "theme_color": "#F4F4F4",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
     "display": "standalone",
     "dir": "ltr",
     "lang": "en-US",

@@ -1,30 +1,34 @@
-# jonathansegal.io 🚀
-![Website](https://img.shields.io/website?down_color=red&down_message=down&up_color=green&up_message=up&url=http%3A%2F%2Fjonathansegal.io%2F)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) 
-[![HitCount](http://hits.dwyl.com/jonathannsegal/jonathansegal.io.svg)](http://hits.dwyl.com/jonathannsegal/jonathansegal.io)
-![GitHub last commit](https://img.shields.io/github/last-commit/jonathannsegal/jonathansegal.io)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This is my personal portfolio. I started in middle school with a static HTML site and over the years after learning more about web development have rebuilt my site with Next.js/React/MDX. My personal site is a central place for me to display my projects, work history, and write blog posts.
+## Getting Started
 
-## Overview 🗺️
-
-- `pages/blog/*` - Static pre-rendered blog pages using [MDX](https://github.com/mdx-js/mdx).
-- `pages/projects/*` - Static pre-rendered project pages using [MDX](https://github.com/mdx-js/mdx).
-- `pages/resume` - [Resume](https://jonathansegal.io/resume) using [jsonresume](https://jsonresume.org/) pulling data from [this](https://gist.github.com/Jonathannsegal/d6f32a17e24add157a4f51781d97e943) gist.
-- `pages/*` - All other static pages.
-
-## Running Locally 💻
+First, run the development server:
 
 ```bash
-$ git clone https://github.com/Jonathannsegal/jonathansegal.io.git
-$ cd jonathansegal.io
-$ yarn
-$ yarn dev
+npm run dev
+# or
+yarn dev
 ```
 
-## Built Using 🏗️
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [Next.js](https://nextjs.org/)
-- [Vercel](https://vercel.com)
-- [MDX](https://github.com/mdx-js/mdx)
-- [Chakra UI](https://chakra-ui.com/)
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

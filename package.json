@@ -1,50 +1,41 @@
 {
-  "name": "jonathansegal.io",
-  "description": "My Website 🚀",
-  "version": "0.0.1",
-  "author": {
-    "name": "Jonathan Segal",
-    "email": "jonathannsegal@gmail.com",
-    "url": "https://jonathansegal.io"
-  },
+  "private": true,
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jonathannsegal/jonathansegal.io.git"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "lint": "eslint . --ext .json --ext .js",
-    "prettier": "prettier --write \"**/*.{html,js,json,md,mdx,mjs,yml}\"",
-    "start": "next start"
+    "turbodev": "concurrently \"next dev --turbo\" \"tailwindcss -i styles/globals.css -o styles/dist.css -w\"",
+    "turbobuild": "tailwindcss -m -i styles/globals.css -o styles/dist.css && next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/core": "^0.7.0",
-    "@emotion/core": "^10.0.28",
-    "@emotion/styled": "^10.0.27",
-    "@mapbox/rehype-prism": "^0.4.0",
-    "@mdx-js/react": "^1.6.1",
-    "babel-plugin-import-glob-array": "^0.2.0",
-    "date-fns": "^2.13.0",
-    "emotion-theming": "^10.0.27",
-    "framer-motion": "^1.11.0",
-    "mdx-prism": "^0.3.1",
-    "next": "9.4.0",
-    "next-mdx-enhanced": "^3.0.0",
-    "next-seo": "^4.4.0",
-    "react": "16.13.1",
-    "react-device-detect": "^1.12.1",
-    "react-dom": "16.13.1",
-    "react-map-gl": "^5.2.5",
-    "reading-time": "^1.2.0",
-    "remark-code-titles": "^0.1.1"
+    "@next/font": "^13.0.6",
+    "@types/node": "18.11.14",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.9",
+    "classnames": "^2.3.2",
+    "next": "13.0.6",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.4",
+    "use-delayed-render": "^0.0.7"
   },
   "devDependencies": {
-    "eslint": "^7.0.0",
-    "eslint-config-get-off-my-lawn": "^5.0.1",
-    "globby": "^11.0.0",
-    "prettier": "^2.0.5",
-    "rehype": "^10.0.0"
+    "@tailwindcss/typography": "^0.5.8",
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.6.0",
+    "eslint": "^8.29.0",
+    "eslint-config-next": "^13.0.6",
+    "postcss-import": "^15.1.0",
+    "prettier": "^2.8.1",
+    "tailwindcss": "^3.2.4"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
   }
 }
