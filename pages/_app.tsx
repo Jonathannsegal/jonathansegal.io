@@ -8,7 +8,7 @@ const heebo = Heebo({ subsets: ['latin'] })
 
 export default function App({Component, pageProps}: AppProps) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute='class' defaultTheme='light'>
       <main className={heebo.className}>
         <Component {...pageProps} />
       </main>
