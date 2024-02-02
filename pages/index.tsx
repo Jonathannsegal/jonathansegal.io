@@ -10,7 +10,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 gap-0 sm:gap-6 sm:grid-cols-2">
           <p className="mb-3 text-justify font-light text-md tracking-tight text-gray-500 dark:text-gray-400">
-            I'm a first-year PhD student in Information Science at{' '}
+            I'm a second-year PhD student in Information Science at{' '}
             <a
               href="https://infosci.cornell.edu/content/segal"
               className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-700"
@@ -19,24 +19,24 @@ export default function Home() {
             </a>
             , where I'm advised by{' '}
             <a
-              href="https://cals.cornell.edu/andrea-stevenson-won"
+              href="https://tech.cornell.edu/people/angelique-taylor/"
               className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-700"
             >
-              Andrea Stevenson Won
+              Angelique Taylor
             </a>
-            . I am a part of the{' '}
+            . I am a part of {' '}
             <a
-              href="https://virtualembodimentlab.com/"
+              href="https://airlab.cis.cornell.edu/"
               className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-700"
             >
-              Virtual Embodiment Lab
+              AIRLab
             </a>
-            , where I have been exploring behavior and perception in virtual
-            environments. My research interests lie at the intersection of
-            Human-Computer Interaction, Computer-Supported Cooperative Work, and
-            Virtual/Mixed Reality. I'm excited about the potential for new,
-            undiscovered uses of AR/VR. Recently I have been investigating
-            nonverbal synchrony and transformative social interaction.
+            , where I have been exploring technological solutions to improve
+            outcomes in emergency response and healthcare. My research interests
+            lie at the intersection of Human-Computer Interaction, Computer-Supported
+            Cooperative Work, and Augmented/Mixed Reality. I'm excited about
+            the potential for new, undiscovered uses of AR/VR. Recently I
+            have been investigating how AR can be used in emergency medicine
           </p>
           <p className="mb-3 text-md text-justify font-light tracking-tight text-gray-500 dark:text-gray-400">
             Prior to joining Cornell, I've worked as a Research Assistant at{' '}
@@ -44,7 +44,7 @@ export default function Home() {
               href="https://www.iastate.edu/"
               className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-700"
             >
-              Iowa State University
+              Iowa State Universiy
             </a>{' '}
             in the{' '}
             <a
@@ -112,7 +112,13 @@ export default function Home() {
               Corteva
             </a>
             . I am always interested in talking about interesting ideas or
-            projects, so feel free to reach out!
+            projects, so {' '}
+            <a
+              href="https://calendar.app.google/rQoseKnSSMrb1iPL9"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-700"
+            >
+              schedule a time to chat!
+            </a>
           </p>
         </div>
       </div>
