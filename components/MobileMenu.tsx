@@ -1,7 +1,31 @@
 import cn from 'classnames';
-// import useDelayedRender from 'use-delayed-render';
 import { useState, useEffect } from 'react';
 import styles from 'styles/mobile-menu.module.css';
+
+function useDelayedRender(isVisible, { enterDelay = 0, exitDelay = 0 }) {
+  const [shouldRender, setShouldRender] = useState(isVisible);
+  const [isRendered, setIsRendered] = useState(false);
+
+  useEffect(() => {
+    let timeoutId;
+
+    if (isVisible && !shouldRender) {
+      timeoutId = setTimeout(() => {
+        setShouldRender(true);
+        setIsRendered(true);
+      }, enterDelay);
+    } else if (!isVisible && shouldRender) {
+      setIsRendered(false);
+      timeoutId = setTimeout(() => {
+        setShouldRender(false);
+      }, exitDelay);
+    }
+
+    return () => clearTimeout(timeoutId);
+  }, [isVisible, enterDelay, exitDelay]);
+
+  return { mounted: shouldRender, rendered: isRendered };
+}
 
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

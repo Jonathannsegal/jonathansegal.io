@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import Footer from 'components/Footer';
-// import MobileMenu from 'components/MobileMenu';
+import MobileMenu from 'components/MobileMenu';
 
 export default function Container(props) {
   const { children, ...customMeta } = props;
@@ -52,7 +52,7 @@ export default function Container(props) {
             Jonathan Segal
           </h1>
           <div className="ml-[-0.60rem]">
-            {/* <MobileMenu /> */}
+            <MobileMenu />
           </div>
         </nav>
       </div>
