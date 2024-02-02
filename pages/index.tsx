@@ -68,7 +68,7 @@ export default function Home() {
               Michael Dorneich
             </a>
             . There, I developed a testbed to assess teaming behaviors and
-            explore human agent teams in virtual environments. I have also done
+            explore human agent teams in VR. I have also done
             research at the{' '}
             <a
               href="https://www6.slac.stanford.edu/"
