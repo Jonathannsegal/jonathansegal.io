@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import { animate } from 'popmotion';
 
 import Footer from 'components/Footer';
 import MobileMenu from 'components/MobileMenu';
