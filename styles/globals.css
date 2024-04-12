@@ -2,12 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  @apply transition-all duration-300 ease-in-out;
+}
+
 ::selection {
   @apply text-white dark:text-black bg-black dark:bg-gray-200;
 }
 
 a::selection {
-  @apply text-yellow-300 dark:text-amber-500;
+  @apply text-yellow-300 dark:text-amber-600;
 }
 
 button::selection {
