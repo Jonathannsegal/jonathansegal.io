@@ -25,14 +25,6 @@ export default function Footer() {
       <div className='w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3'>
         <div className='flex flex-col space-y-4'>
           <button
-            className='text-gray-500 hover:text-gray-600 transition text-left'
-            onClick={() =>
-              setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
-            }
-          >
-            {mounted && (resolvedTheme === 'dark' ? 'Light' : 'Dark')}
-          </button>
-          <button
             onClick={() => {
               navigator.clipboard.writeText('jis62@cornell.edu');
             }}

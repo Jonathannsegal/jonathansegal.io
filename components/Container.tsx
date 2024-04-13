@@ -1,11 +1,15 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
 
 import Footer from 'components/Footer';
-import MobileMenu from 'components/MobileMenu';
 
 export default function Container(props) {
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme();
+
+  useEffect(() => setMounted(true), []);
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
@@ -146,7 +150,14 @@ export default function Container(props) {
             <span className='tracking-tight hover:tracking-wide'>Jonathan</span> <span className='font-bold tracking-wide hover:tracking-widest'>Segal</span>
           </h1>
           <div className='ml-[-0.60rem]'>
-            <MobileMenu />
+            <button
+              className='text-gray-500 hover:text-gray-600 transition text-left'
+              onClick={() =>
+                setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
+              }
+            >
+              {mounted && (resolvedTheme === 'dark' ? 'Light' : 'Dark')}
+            </button>
           </div>
         </nav>
       </div>
