@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://jonathansegal.io/sitemap.xml
