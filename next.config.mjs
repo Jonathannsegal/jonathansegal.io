@@ -15,7 +15,6 @@ const nextConfig = {
       },
     ]
   },
-  presets: ['next/babel'],
   transpilePackages: ['next-mdx-remote'],
   headers() {
     return [
