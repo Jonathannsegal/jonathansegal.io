@@ -30,6 +30,7 @@
     "singleQuote": true
   },
   "devDependencies": {
+    "eslint": "^9.1.1",
     "raw-loader": "^4.0.2"
   }
 }
