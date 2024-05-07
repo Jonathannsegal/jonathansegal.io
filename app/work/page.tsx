@@ -652,15 +652,6 @@ export default function Page() {
         description='Responsible for managing the budget and finances of the organization.'
       />
       <Service
-        role='Judge'
-        organization='Association for Computing Machinery International Conference on Computer-Human Interaction'
-        organizationShortName='CURB Spring Symposium'
-        organizationUrl='https://infosci.cornell.edu'
-        startDate='2024-05-02'
-        endDate='2024-05-02'
-        description='Responsible for managing the budget and finances of the organization.'
-      />
-      <Service
         role='Reviewer'
         organization='Association for Computing Machinery International Conference on Computer-Human Interaction'
         organizationShortName='IS Student-Applicant Reading Program (SARP)'
