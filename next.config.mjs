@@ -13,6 +13,10 @@ const nextConfig = {
         source: '/cv',
         destination: '/work',
       },
+      {
+        source: '/static/papers/SocialCueSwitch.pdf',
+        destination: '/papers/SocialCueSwitch.pdf',
+      }
     ]
   },
   transpilePackages: ['next-mdx-remote'],
