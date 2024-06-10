@@ -6,9 +6,6 @@ const navItems = {
   },
   '/work': {
     name: 'work/cv',
-  },
-  '/life': {
-    name: 'life',
   }
 };
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'A summary of my work and contributions.',
 };
 
-function Publication({ author, cofirst, year, title, booktitle, conference, date, address, doi }) {
+function Publication({ author, cofirst, year, title, booktitle = '', conference, date, address, doi }) {
   const authorLinks = author.map(orcid => {
     const foundAuthor = people.find(author => author.orcid === orcid);
     const isCoFirst = cofirst !== false && cofirst.includes(orcid);
@@ -536,6 +536,22 @@ export default function Page() {
       <Publication
         author={[
           '0000-0002-8506-3785',
+          'CP',
+          'JN',
+          'FO',
+          'AT'
+        ]}
+        cofirst={false}
+        year='2024'
+        title='AR application design for Healthcare Teams'
+        conference='XR Access'
+        address='New York, NY, USA'
+        date='May 11--16, 2024'
+        doi='/posters/arhealth24.pdf'
+      />
+      <Publication
+        author={[
+          '0000-0002-8506-3785',
           '0000-0003-2501-0304',
           '0009-0002-6167-6955',
           '0009-0002-7266-9785',
@@ -642,6 +658,33 @@ export default function Page() {
       />
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Service</h1>
+      <Service
+        role='Student Volunteer'
+        organization='SigGraph'
+        organizationShortName='SigGraph'
+        organizationUrl='https://s2024.siggraph.org/'
+        startDate='2024-07-28'
+        endDate='2024-08-01'
+        description=''
+      />
+      <Service
+        role='Student Volunteer'
+        organization='AWE XR'
+        organizationShortName='AWE'
+        organizationUrl='https://www.awexr.com/'
+        startDate='2024-06-18'
+        endDate='2024-06-20'
+        description=''
+      />
+      <Service
+        role='IT Chair'
+        organization='XR Access'
+        organizationShortName='XR Access'
+        organizationUrl='https://xraccess.org/symposium/'
+        startDate='2024-06-06'
+        endDate='2024-06-07'
+        description=''
+      />
       <Service
         role='Treasurer'
         organization='Information Science Graduate Student Association'
@@ -765,6 +808,7 @@ export default function Page() {
       />
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Mentoring</h1>
+      <p>Veritas AI</p>
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Professional Certifications</h1>
       <p>EMT</p>

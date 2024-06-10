@@ -646,7 +646,67 @@ export const people = [
         orcid: 'DM',
         email: 'jis62@cornell.edu',
         image: 'https://infosci.cornell.edu/sites/default/files/Grad1.jpg',
-        url: 'https://infosci.cornell.edu/content/segal',
+        url: 'https://cals.cornell.edu/drew-margolin',
+        affiliation: {
+            institution: 'Cornell University',
+            department: 'Information Science',
+            lab: 'AIRLab',
+            url: 'https://airlab.cis.cornell.edu/',
+            streetAddress: '2 W Loop Rd',
+            city: 'Ithaca',
+            state: 'NY',
+            country: 'USA',
+            postcode: '14850'
+        }
+    },
+    {
+        firstName: 'Connor',
+        middleName: '',
+        lastName: 'Pugh',
+        orcid: 'CP',
+        email: '',
+        image: '',
+        url: '',
+        affiliation: {
+            institution: 'Cornell University',
+            department: 'Information Science',
+            lab: 'AIRLab',
+            url: 'https://airlab.cis.cornell.edu/',
+            streetAddress: '2 W Loop Rd',
+            city: 'Ithaca',
+            state: 'NY',
+            country: 'USA',
+            postcode: '14850'
+        }
+    },
+    {
+        firstName: 'Jalynn',
+        middleName: '',
+        lastName: 'Nicoly',
+        orcid: 'JN',
+        email: '',
+        image: '',
+        url: '',
+        affiliation: {
+            institution: 'Cornell University',
+            department: 'Information Science',
+            lab: 'AIRLab',
+            url: 'https://airlab.cis.cornell.edu/',
+            streetAddress: '2 W Loop Rd',
+            city: 'Ithaca',
+            state: 'NY',
+            country: 'USA',
+            postcode: '14850'
+        }
+    },
+    {
+        firstName: 'Francisco',
+        middleName: '',
+        lastName: 'Ortega',
+        orcid: 'FO',
+        email: '',
+        image: '',
+        url: '',
         affiliation: {
             institution: 'Cornell University',
             department: 'Information Science',

@@ -8,7 +8,6 @@ export default {
       fontFamily: {
         sans: ['Lexend Deca', 'sans-serif'],
         icon: ['var(--font-openmoji)'],
-        // sans: ['Lexend', 'sans-serif'],
         mono: ['Space Mono', 'monospace'],
       },
       typography: {
