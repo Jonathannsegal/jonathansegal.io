@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import { Navbar } from './components/nav';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-// import { SandpackCSS } from './blog/[slug]/sandpack';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://jonathansegal.io'),
@@ -38,7 +37,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
   },
 };
 

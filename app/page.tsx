@@ -23,7 +23,7 @@ function ArrowIcon() {
 const SocialLink = ({ name, url }) => (
     <li className="mb-2 mr-2">
         <Link href={url}>
-            <span className="link inline-block py-1 px-3 rounded-md transition duration-300 bg-transparent hover:bg-gray-200 cursor-pointer">{name}</span>
+            <span className="link inline-block py-1 px-3 rounded-md transition duration-300 bg-transparent hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer">{name}</span>
         </Link>
     </li>
 );
