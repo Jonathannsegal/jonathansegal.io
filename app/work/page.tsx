@@ -411,7 +411,7 @@ export default function Page() {
         advisors={[
           { orcid: 'AT', role: 'Advisors' },
           { orcid: '0000-0001-5240-6166', role: 'Advisors' },
-          { orcid: 'AD', role: 'Advisors' }
+          { orcid: '0000-0003-1469-2696', role: 'Advisors' }
         ]}
       />
       <Education
@@ -525,7 +525,7 @@ export default function Page() {
         title={'Introduction to Communication'}
         semester={'Fall'}
         year={'2023'}
-        instructor={'DM'}
+        instructor={'0000-0003-0257-6217'}
         role={'Guest Lecturer'}
         responsibilities={''}
         university={'Cornell University'}
@@ -536,7 +536,7 @@ export default function Page() {
       <Publication
         author={[
           '0000-0002-8506-3785',
-          'CP',
+          '0009-0006-5594-1635',
           'JN',
           'FO',
           'AT'
@@ -570,9 +570,9 @@ export default function Page() {
       <Publication
         author={[
           '0000-0002-8506-3785',
-          'YJ',
-          'HK',
-          'CY',
+          '0000-0003-1606-874X',
+          '0000-0001-8465-6442',
+          '0000-0003-3229-4341',
           'MJ',
           'SF',
           '0000-0001-5240-6166'
@@ -588,10 +588,10 @@ export default function Page() {
       />
       <Publication
         author={[
-          'YJ',
-          'HK',
+          '0000-0003-1606-874X',
+          '0000-0001-8465-6442',
           '0000-0002-8506-3785',
-          'CY',
+          '0000-0003-3229-4341',
           '0000-0002-0880-077X',
           'SF',
           '0000-0001-5240-6166'
@@ -609,8 +609,8 @@ export default function Page() {
         author={[
           '0000-0002-8506-3785',
           'WH',
-          'PF',
-          'JS'
+          '0000-0002-3714-7239',
+          '0000-0002-7007-6305'
         ]}
         cofirst={false}
         year='2022'
