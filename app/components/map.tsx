@@ -1,19 +1,21 @@
 'use client';
 
 import { useRef } from 'react';
-import MapView from "react-map-gl";
+import MapView, { MapRef } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 export default function Map() {
-    const mapRef = useRef(null);
+    const mapRef = useRef<MapRef | null>(null);
 
     const handleLoad = () => {
-        const map = mapRef.current.getMap();
+        if (mapRef.current) {
+            const map = mapRef.current.getMap();
 
-        const currentHour = new Date().getHours();
-        const lightPreset = currentHour >= 18 || currentHour < 6 ? 'night' : 'day';
+            const currentHour = new Date().getHours();
+            const lightPreset = currentHour >= 18 || currentHour < 6 ? 'night' : 'day';
 
-        map.setConfigProperty('basemap', 'lightPreset', lightPreset);
+            map.setConfigProperty('basemap', 'lightPreset', lightPreset);
+        }
     };
 
     return (

@@ -1,5 +1,24 @@
 {
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
   "extends": "next",
+  "parser": [
+    "eslint:recommended",
+    "@typescript-eslint/parser",
+    "next/core-web-vitals"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "rules": {
     "react/prop-types": 0,
     "react/no-unescaped-entities": 0,
