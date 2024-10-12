@@ -237,11 +237,11 @@ function Affiliations({ role, lab, labUrl, lead, institution, institutionUrl, lo
   );
 }
 
-function Talk({ title, venue }) {
+function Talk({ title, venue, link }) {
   return (
     <div className='mb-4'>
       <p className='text-md font-medium text-gray-800 dark:text-gray-200'>
-        {title}, {venue}
+        <Link href={link}>{title}</Link>, {venue}
       </p>
     </div>
   );
@@ -744,6 +744,12 @@ export default function Page() {
       <Talk
         title='Live VR scanning'
         venue='Neurosalon: Life History Lab'
+        link={'#'}
+      />
+      <Talk
+        title='XR Live Scanning'
+        venue='Life History Lab'
+        link={'https://docs.google.com/presentation/d/118iCvG6_Ov8gMeLBsNa3pncNXNx0itpQXlFC8_FGZYQ/edit?usp=sharing'}
       />
       <p>Unity Teaching</p>
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
