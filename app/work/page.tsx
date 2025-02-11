@@ -507,6 +507,32 @@ export default function Page() {
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Teaching</h1>
       <Class
         subject={'INFO'}
+        number={'5368'}
+        url={'https://classes.cornell.edu/browse/roster/SP25/class/INFO/5368'}
+        title={'Practical Applications in Machine Learning'}
+        semester={'Spring'}
+        year={'2025'}
+        instructor={'0000-0001-5693-3326'}
+        role={'Teaching Assistant'}
+        responsibilities={'This class is for both undergraduate and graduate students at Cornell with different backgrounds. My responsibilities as a TA were to hold office hours and project meetings with students to help them address the problems they encountered during individual assignments and group projects. The problems were usually related to a wide range of topics in rapid prototyping and physical computing including 3D printing, laser cutting, microcontrollers, sensors, and motors. Besides, I also provided grades and feedback on the students’ assignments and project reports together with other TAs.'}
+        university={'Cornell University'}
+        description={'To date, most computing technologies have primarily benefited urban, affluent, and literate people in developed regions by empowering them with more information, resources, and agency. These technologies currently exclude billions of people worldwide, such as rural residents, people with disabilities, and indigenous communities, who are too poor to afford modern devices, too remote to be connected, or too low-literate to navigate the mostly text-driven Internet. In recent years, researchers and practitioners have examined how computing technologies can be designed or appropriated to empower such underserved communities. This course introduces students to the field of Information and Communication Technologies and Development (ICTD). Through discussions of case studies from the Global South, students will study how computing technologies are used in different global development domains, such as agriculture, finance, health, social justice, and education. They will gain understanding of socio-economic, cultural, and political forces that impact technology adoption in low-resource environments and will learn to design, build, and evaluate inclusive technologies to empower marginalized people.​'}
+      />
+      <Class
+        subject={'INFO'}
+        number={'5340'}
+        url={'https://classes.cornell.edu/browse/roster/SP24/class/INFO/4505'}
+        title={'Virtual and Augmented Reality'}
+        semester={'Fall'}
+        year={'2024'}
+        instructor={'0000-0001-5693-3326'}
+        role={'Teaching Assistant'}
+        responsibilities={'This class is for both undergraduate and graduate students at Cornell with different backgrounds. My responsibilities as a TA were to hold office hours and project meetings with students to help them address the problems they encountered during individual assignments and group projects. The problems were usually related to a wide range of topics in rapid prototyping and physical computing including 3D printing, laser cutting, microcontrollers, sensors, and motors. Besides, I also provided grades and feedback on the students’ assignments and project reports together with other TAs.'}
+        university={'Cornell University'}
+        description={'To date, most computing technologies have primarily benefited urban, affluent, and literate people in developed regions by empowering them with more information, resources, and agency. These technologies currently exclude billions of people worldwide, such as rural residents, people with disabilities, and indigenous communities, who are too poor to afford modern devices, too remote to be connected, or too low-literate to navigate the mostly text-driven Internet. In recent years, researchers and practitioners have examined how computing technologies can be designed or appropriated to empower such underserved communities. This course introduces students to the field of Information and Communication Technologies and Development (ICTD). Through discussions of case studies from the Global South, students will study how computing technologies are used in different global development domains, such as agriculture, finance, health, social justice, and education. They will gain understanding of socio-economic, cultural, and political forces that impact technology adoption in low-resource environments and will learn to design, build, and evaluate inclusive technologies to empower marginalized people.​'}
+      />
+      <Class
+        subject={'INFO'}
         number={'4505/5505'}
         url={'https://classes.cornell.edu/browse/roster/SP24/class/INFO/4505'}
         title={'Computing and Global Development'}

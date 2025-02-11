@@ -1,10 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Map from 'app/components/map';
-import friends from 'public/images/friends.jpg';
+import medical from 'public/images/medical.jpg';
 import presentation from 'public/images/presentation.jpg';
 import cohort from 'public/images/cohort.jpg';
-import hockey from 'public/images/hockey.jpg';
+import lab from 'public/images/lab.jpg';
 import nyc from 'public/images/nyc.jpg';
 import ithaca from 'public/images/ithaca.jpg';
 
@@ -50,10 +49,10 @@ export default function Page() {
         { name: 'Instagram', url: 'https://www.instagram.com/jonathannsegal/' },
     ];
     const gridImages = [
-        { alt: 'Me with a group of fellow PhD students at a Cornell mens hockey game, Go Big Red!', src: hockey, classNames: 'relative mb-4 h-40', sizes: '(max-width: 768px) 213px, 33vw' },
+        { alt: 'Me with a group of fellow PhD students at a Cornell mens hockey game, Go Big Red!', src: lab, classNames: 'relative mb-4 h-40', sizes: '(max-width: 768px) 213px, 33vw' },
         { alt: 'A photo of the Cornell Tech campus in New York City, looking down the main throughway with the Queensborough bridge in the background', src: nyc, classNames: 'relative mb-4 h-80 sm:mb-0', sizes: '(max-width: 768px) 213px, 33vw' },
         { alt: 'Me presenting my project at the Cornell health hackathon 2024', src: presentation, classNames: 'relative h-40 sm:mb-4 sm:h-80', sizes: '(max-width: 768px) 213px, 33vw' },
-        { alt: 'Me, my housemates, and Touchdown the cornell mascot at a football game', src: friends, classNames: 'relative mb-4 h-40 sm:mb-0', sizes: '(max-width: 768px) 213px, 33vw' },
+        { alt: 'Me, my housemates, and Touchdown the cornell mascot at a football game', src: medical, classNames: 'relative mb-4 h-40 sm:mb-0', sizes: '(max-width: 768px) 213px, 33vw' },
         { alt: 'Me with a group of fellow PhD students at the regent lounge at the Statler hotel', src: cohort, classNames: 'relative mb-4 h-40', sizes: '(max-width: 768px) 213px, 33vw' },
         { alt: 'An aerial photo of the Cornell Ithaca campus in Ithaca, looking down on gates hall with mcgraw tower and cayuga lake in the distance', src: ithaca, classNames: 'relative h-80', sizes: '(min-width: 768px) 213px, 33vw' },
     ];
@@ -137,9 +136,6 @@ export default function Page() {
                     <SocialLink key={index} {...link} />
                 ))}
             </ul>
-            <div className='my-8 relative h-80' >
-                <Map />
-            </div>
         </section >
     );
 }
