@@ -309,12 +309,43 @@ export default function Page() {
     <section>
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Research Interests</h1>
       <p className='prose prose-neutral dark:prose-invert max-w-none text-pretty'>
-        I envision a future where first responders receive support from cutting-edge technology, ensuring consistent service quality regardless of the time. Augmented reality could be crucial in aiding healthcare workers with various tasks, from coordinating teams to remote assistance. Integrating AR headsets into the emergency medical system toolkit—for first responders, EMTs, and paramedics—can enhance the speed and quality of care. Given that the U.S. EMS system is overburdened, leveraging such technological support could save lives.
+        I envision a future where first responders receive support from cutting-edge technology, ensuring consistent service quality regardless of the time. Augmented reality could be crucial in aiding healthcare workers with various tasks, from coordinating teams to remote assistance. Integrating AR headsets into the emergency medical system toolkit for first responders, EMTs, and paramedics that can enhance the speed and quality of care. Given that the U.S. EMS system is overburdened, leveraging such technological support could save lives.
         <br /><br />
         My PhD work specifically focuses on how augmented and virtual reality systems can improve medical workflows. I have worked on various AR/VR applications, including education, accessibility, and teamwork. My current work is on various AR applications to support HCWs in the emergency department.
       </p>
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Publications</h1>
+      <Publication
+        author={[
+          '0009-0003-4643-4111',
+          '0000-0002-8506-3785'
+        ]}
+        cofirst={false}
+        year='2025'
+        title='MazeWorld: A Multiplayer 3D Research Testbed for Human Teaming, AI Agent Integration, and Multiple XR Disciplines'
+        booktitle='Communications in Computer and Information Science'
+        conference='HCII'
+        address='Gothenburg, Sweden'
+        date='June 22--27, 2025'
+        doi='https://doi.org/10.1007/978-3-031-94162-7_30'
+      />
+      <Publication
+        author={[
+          '0000-0002-8506-3785',
+          'WH',
+          '0000-0002-3714-7239',
+          'FR',
+          '0000-0002-7007-6305'
+        ]}
+        cofirst={false}
+        year='2025'
+        title='A multi-scale cognitive interaction model of instrument operations at the Linac Coherent Light Source'
+        booktitle='Review of Scientific Instruments'
+        conference='Rev. Sci. Instrum.'
+        address='Gothenburg, Sweden'
+        date='Jan 29, 2025'
+        doi='https://doi.org/10.1063/5.0239302'
+      />
       <Publication
         author={[
           '0000-0002-8506-3785',
@@ -684,6 +715,15 @@ export default function Page() {
       />
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Service</h1>
+      <Service
+        role='Student Volunteer'
+        organization='AWE XR'
+        organizationShortName='AWE'
+        organizationUrl='https://www.awexr.com/'
+        startDate='2025-06-18'
+        endDate='2025-06-20'
+        description=''
+      />
       <Service
         role='Student Volunteer'
         organization='SigGraph'

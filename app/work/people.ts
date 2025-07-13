@@ -466,7 +466,7 @@ export const people = [
         middleName: 'B',
         lastName: 'Fuoss',
         orcid: '0000-0002-3714-7239',
-        email: 'fuoss@SLAC.Stanford.EDU',
+        email: 'fuoss@slac.stanford.edu',
         image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=ncrwTLcAAAAJ&citpid=1',
         url: 'https://profiles.stanford.edu/paul-fuoss',
         affiliation: {
@@ -497,6 +497,24 @@ export const people = [
             state: 'CA',
             country: 'USA',
             postcode: '94025'
+        }
+    },
+    {
+        firstName: 'Frank',
+        middleName: 'E',
+        lastName: 'Ritter',
+        orcid: 'FR',
+        email: 'fer2@psu.edu',
+        image: 'https://www.frankritter.com/image_6920.jpg',
+        url: 'https://www.frankritter.com/ritter.html',
+        affiliation: {
+            institution: 'Pennsylvania State University',
+            department: 'Information Sciences and Technology',
+            streetAddress: 'E309 Westgate Building',
+            city: 'University Park',
+            state: 'PA',
+            country: 'USA',
+            postcode: '16802'
         }
     },
     {
@@ -717,6 +735,26 @@ export const people = [
             state: 'CO',
             country: 'USA',
             postcode: '80523'
+        }
+    },
+        {
+        firstName: 'Stephen',
+        middleName: '',
+        lastName: 'Fieffer',
+        orcid: '0009-0003-4643-4111',
+        email: 'sfieffer@iastate.edu',
+        image: 'https://projects.vrac.iastate.edu/stemlead/files/2024/09/stephencropped.jpg',
+        url: 'https://www.linkedin.com/in/stephen-fieffer/',
+        affiliation: {
+            institution: 'Iowa State University',
+            department: 'Human Computer Interaction',
+            lab: 'VRAC',
+            url: 'https://www.vrac.iastate.edu/',
+            streetAddress: '537 Bissell Rd',
+            city: 'Ames',
+            state: 'IA',
+            country: 'USA',
+            postcode: '50011'
         }
     }
 ];
