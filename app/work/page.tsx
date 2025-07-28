@@ -102,7 +102,7 @@ function Advisor({ orcid }) {
   );
 }
 
-function Education({ degree, field, school, schoolUrl, schoolSeal, url, location, description, startYear, endYear, courses, showCourses = false, advisors }) {
+function Education({ degree, field, school, schoolUrl, schoolSeal, url, location, description, startYear, endYear, courses, showCourses = false, advisors, dissertationTitle }) {
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location)}`;
 
   const groupedAdvisors = advisors.reduce((acc, advisor) => {
@@ -151,6 +151,11 @@ function Education({ degree, field, school, schoolUrl, schoolSeal, url, location
             <Link href={mapsUrl} target='_blank' rel='noopener noreferrer'>{location}</Link>
           </span>
         </div>
+        {dissertationTitle && (
+        <div className="mt-1 text-sm text-pretty">
+          <strong>Thesis:</strong> {dissertationTitle}
+        </div>
+      )}
         {advisors && advisors.length > 0 && (
           <div className='mt-1 text-sm'>
             {advisorsDisplay}
@@ -318,7 +323,19 @@ export default function Page() {
       <Publication
         author={[
           '0009-0003-4643-4111',
-          '0000-0002-8506-3785'
+          '0000-0002-0647-1263',
+          '0000-0002-7327-1253',
+          'SS',
+          '0000-0002-8506-3785',
+          'LL', // Lovig, L.
+          'GSA', // Abadi, G. S.
+          'AD', // Deal, A.
+          'HS', // Sabouni, H.
+          'MJR', // Ranjbar, M. J.
+          'NL', // Lauharatanahirun, N.
+          '0000-0001-6386-4787',
+          '0000-0001-5240-6166',
+          '0000-0002-5332-029X' 
         ]}
         cofirst={false}
         year='2025'
@@ -345,6 +362,24 @@ export default function Page() {
         address='Gothenburg, Sweden'
         date='Jan 29, 2025'
         doi='https://doi.org/10.1063/5.0239302'
+      />
+      <Publication
+        author={[
+          '0000-0003-4434-1723',
+          '0000-0001-6850-5820',
+          '0000-0002-1344-3850',
+          '0000-0002-8506-3785',
+          '0000-0001-5240-6166',
+          '0000-0002-6701-4066'
+        ]}
+        cofirst={false}
+        year='2024'
+        title='Accessible Nonverbal Cues to Support Conversations in VR for Blind and Low Vision People'
+        booktitle='Accessible Nonverbal Cues to Support Conversations in VR for Blind and Low Vision People'
+        conference='ASSETS'
+        address='St. Johns, Newfoundland and Labrador, CA'
+        date='Oct 28--30, 2024'
+        doi='https://dl.acm.org/doi/abs/10.1145/3663548.3675663'
       />
       <Publication
         author={[
@@ -429,7 +464,7 @@ export default function Page() {
         school='Cornell University'
         schoolUrl='https://www.cornell.edu'
         schoolSeal='./cornell.svg'
-        location='Ithaca, New York, United States'
+        location='New York, New York, United States'
         url='https://infosci.cornell.edu/'
         description='Concentrated on augmented and virtual reality systems to improve medical workflows.'
         startYear='2022'
@@ -442,8 +477,10 @@ export default function Page() {
         advisors={[
           { orcid: 'AT', role: 'Advisors' },
           { orcid: '0000-0001-5240-6166', role: 'Advisors' },
+          { orcid: '0000-0002-0472-5493', role: 'Advisors' },
           { orcid: '0000-0003-1469-2696', role: 'Advisors' }
         ]}
+        dissertationTitle={'Designing Customizable Augmented Reality Interfaces to Empower Emergency Medical Teams'}
       />
       <Education
         degree='Study Abroad'
@@ -462,6 +499,7 @@ export default function Page() {
         ]}
         showCourses={false}
         advisors={[]}
+        dissertationTitle={''}
       />
       <Education
         degree='BS'
@@ -483,6 +521,7 @@ export default function Page() {
           { orcid: '0000-0001-6386-4787', role: 'Advisors' },
           { orcid: '0000-0002-5332-029X', role: 'Advisors' }
         ]}
+        dissertationTitle={''}
       />
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Research Affiliations</h1>
@@ -543,11 +582,11 @@ export default function Page() {
         title={'Practical Applications in Machine Learning'}
         semester={'Spring'}
         year={'2025'}
-        instructor={'0000-0001-5693-3326'}
+        instructor={'AT'}
         role={'Teaching Assistant'}
-        responsibilities={'This class is for both undergraduate and graduate students at Cornell with different backgrounds. My responsibilities as a TA were to hold office hours and project meetings with students to help them address the problems they encountered during individual assignments and group projects. The problems were usually related to a wide range of topics in rapid prototyping and physical computing including 3D printing, laser cutting, microcontrollers, sensors, and motors. Besides, I also provided grades and feedback on the students’ assignments and project reports together with other TAs.'}
-        university={'Cornell University'}
-        description={'To date, most computing technologies have primarily benefited urban, affluent, and literate people in developed regions by empowering them with more information, resources, and agency. These technologies currently exclude billions of people worldwide, such as rural residents, people with disabilities, and indigenous communities, who are too poor to afford modern devices, too remote to be connected, or too low-literate to navigate the mostly text-driven Internet. In recent years, researchers and practitioners have examined how computing technologies can be designed or appropriated to empower such underserved communities. This course introduces students to the field of Information and Communication Technologies and Development (ICTD). Through discussions of case studies from the Global South, students will study how computing technologies are used in different global development domains, such as agriculture, finance, health, social justice, and education. They will gain understanding of socio-economic, cultural, and political forces that impact technology adoption in low-resource environments and will learn to design, build, and evaluate inclusive technologies to empower marginalized people.​'}
+        responsibilities={''}
+        university={'Cornell Tech'}
+        description={''}
       />
       <Class
         subject={'INFO'}
@@ -556,11 +595,11 @@ export default function Page() {
         title={'Virtual and Augmented Reality'}
         semester={'Fall'}
         year={'2024'}
-        instructor={'0000-0001-5693-3326'}
+        instructor={'HH'}
         role={'Teaching Assistant'}
-        responsibilities={'This class is for both undergraduate and graduate students at Cornell with different backgrounds. My responsibilities as a TA were to hold office hours and project meetings with students to help them address the problems they encountered during individual assignments and group projects. The problems were usually related to a wide range of topics in rapid prototyping and physical computing including 3D printing, laser cutting, microcontrollers, sensors, and motors. Besides, I also provided grades and feedback on the students’ assignments and project reports together with other TAs.'}
-        university={'Cornell University'}
-        description={'To date, most computing technologies have primarily benefited urban, affluent, and literate people in developed regions by empowering them with more information, resources, and agency. These technologies currently exclude billions of people worldwide, such as rural residents, people with disabilities, and indigenous communities, who are too poor to afford modern devices, too remote to be connected, or too low-literate to navigate the mostly text-driven Internet. In recent years, researchers and practitioners have examined how computing technologies can be designed or appropriated to empower such underserved communities. This course introduces students to the field of Information and Communication Technologies and Development (ICTD). Through discussions of case studies from the Global South, students will study how computing technologies are used in different global development domains, such as agriculture, finance, health, social justice, and education. They will gain understanding of socio-economic, cultural, and political forces that impact technology adoption in low-resource environments and will learn to design, build, and evaluate inclusive technologies to empower marginalized people.​'}
+        responsibilities={''}
+        university={'Cornell Tech'}
+        description={'​'}
       />
       <Class
         subject={'INFO'}
@@ -590,6 +629,37 @@ export default function Page() {
       />
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Posters and Demos</h1>
+      <Publication
+        author={[
+          'ES', // Shaveet, E.
+          '0000-0002-8506-3785', // Segal, J. I.
+          'HM', // Mitchell, H.
+          'TC' // Choudhury, T.
+        ]}
+        cofirst={false}
+        year='2025'
+        title='Towards Gaze Tracking on Short Form Videos for Body Image Disturbance-Driven Condition Detection and Self-Monitoring'
+        conference='CHI Workshop'
+        address='' // Add address if known
+        date='' // Add date if known
+        doi='' // Add DOI/URL if available
+      />
+      <Publication
+        author={[
+          '0000-0002-8506-3785', // Segal, J.
+          '0009-0006-5594-1635', // Pugh, C.
+          'JN', // Nicoly, J.
+          'FO', // Ortega, F.
+          'AT' // Taylor, A.
+        ]}
+        cofirst={false}
+        year='2024'
+        title='Enhancing Emergency Room Response through Hands-Free Augmented Reality Assistance'
+        conference='Immersive Media in Medicine Symposium'
+        address='' // Add address if known
+        date='' // Add date if known
+        doi='' // Add DOI/URL if available
+      />
       <Publication
         author={[
           '0000-0002-8506-3785',
@@ -720,8 +790,53 @@ export default function Page() {
         organization='AWE XR'
         organizationShortName='AWE'
         organizationUrl='https://www.awexr.com/'
+        startDate='2025-03-18'
+        endDate='2025-03-19'
+        description=''
+      />
+      <Service
+        role='Student Leader'
+        organization='Cornell Tech'
+        organizationShortName='IS PhD visit days'
+        organizationUrl='https://www.cornelltech.edu/'
         startDate='2025-06-18'
         endDate='2025-06-20'
+        description=''
+      />
+      <Service
+        role='Student Volunteer'
+        organization='Immersive Media in Medicine Symposium'
+        organizationShortName='IMMS'
+        organizationUrl='https://cornellvrsymposium.com/'
+        startDate='2024-12-12'
+        endDate='2024-12-13'
+        description=''
+      />
+      <Service
+        role='Reviewer'
+        organization='Association for Computing Machinery International Conference on Computer-Human Interaction'
+        organizationShortName='IS Student-Applicant Reading Program (SARP)'
+        organizationUrl='https://infosci.cornell.edu'
+        startDate='2025-01-01'
+        endDate='2025-01-01'
+        description='Responsible for managing the budget and finances of the organization.'
+      />
+      <Service
+        role='Volunteer mentor'
+        organization='Cornell Tech'
+        organizationShortName='WiCC HS Programming Workshop'
+        organizationUrl='https://www.cs.cornell.edu/events/cornell-university-cornell-tech-high-school-programming-workshop-and-contest-2025'
+        startDate='2025-01-01'
+        endDate='2025-01-01'
+        description=''
+      />
+      <Service
+        role='AirLab Ambassador'
+        organization='Queens Tech Fair'
+        organizationShortName='Queens Tech Fair'
+        organizationUrl='https://movingimage.org/event/queens-tech-and-career-expo/'
+        startDate='2025-01-01'
+        endDate='2025-01-01'
         description=''
       />
       <Service
@@ -863,10 +978,54 @@ export default function Page() {
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Organizations</h1>
       <p>ACM SIGCHI</p>
       <p>IEEE VR</p>
+      <p>American Medical Extended Reality Association</p>
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Leadership</h1>
-      <p>Hackathon Club</p>
-      <p>Photo Club</p>
+      <Experience
+        title='Co-Strategic Officer'
+        company="PhD's at Cornell Tech (PACT)"
+        companyUrl='https://tech.cornell.edu/'
+        location='New York, New York, United States'
+        startDate='2025-03-01'
+        endDate='2026-05-01'
+        description='Maintaining the organization website and calendar to enhance communication and coordination among PhD students at Cornell Tech.'
+      />
+      <Experience
+        title='Treasurer'
+        company='Information Science Graduate Student Association'
+        companyUrl='https://infosci.cornell.edu'
+        location='Ithaca, New York, United States'
+        startDate='2022-08-01'
+        endDate='2024-05-01'
+        description='I handled the departmental budget as well as the organization budget for events such as the research retreat, town halls, and department socials.'
+      />
+      <Experience
+        title='Student Engagement Co-chair'
+        company="Iowa State Engineers' Week"
+        companyUrl='https://www.iastate.edu/'
+        location='Ames, Iowa, United States'
+        startDate='2021-08-01'
+        endDate='2022-05-01'
+        description='Helped organize five engagement events over the year as well as Engineering Week which had a combined attendance over 500 students.'
+      />
+      <Experience
+        title='Chair Member'
+        company='Iowa State Software Engineering Student Council'
+        companyUrl='https://www.iastate.edu/'
+        location='Ames, Iowa, United States'
+        startDate='2021-08-01'
+        endDate='2022-05-01'
+        description='Ran town hall events to voice opinions and concerns from students and present the information to professors and leadership in software engineering average student attendance 40.'
+      />
+      <Experience
+        title='Co-Founder & President'
+        company='Hackathon Club'
+        companyUrl='https://www.iastate.edu/'
+        location='Ames, Iowa, United States'
+        startDate='2019-09-01'
+        endDate='2020-01-01'
+        description='Organized teambuilding and transportation to 7 hackathons with an average of 10+ students. Grew club to 70+ members by recruiting through university events and advertisements.'
+      />
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Software Artifacts and Datasets</h1>
       <p>Social Sensory Sub</p>

@@ -111,6 +111,25 @@ export const people = [
             postcode: '10044'
         }
     },
+        {
+        firstName: 'Harald',
+        lastName: 'Haraldsson',
+        orcid: 'HH',
+        email: 'hh586@cornell.edu',
+        image: 'https://tech.cornell.edu/wp-content/uploads/2020/10/harald-haraldsson.jpg',
+        url: 'https://www.haraldharaldsson.com/',
+        affiliation: {
+            institution: 'Cornell Tech',
+            department: 'Information Science',
+            lab: 'XR Collaboratory',
+            url: 'https://xrcollaboratory.tech.cornell.edu/',
+            streetAddress: '2 W Loop Rd',
+            city: 'New York',
+            state: 'NY',
+            country: 'USA',
+            postcode: '10044'
+        }
+    },
     {
         firstName: 'Jazmin',
         lastName: 'Collins',
@@ -118,6 +137,25 @@ export const people = [
         email: 'jc2884@cornell.edu',
         image: 'http://jazmincollins.com/wp-content/uploads/2022/07/Profile-Pic.jpg',
         url: 'http://jazmincollins.com/',
+        affiliation: {
+            institution: 'Cornell Tech',
+            department: 'Information Science',
+            lab: 'Enhancing Ability Lab',
+            url: 'https://shiriazenkot.wixsite.com/shiri-azenkot',
+            streetAddress: '2 W Loop Rd',
+            city: 'New York',
+            state: 'NY',
+            country: 'USA',
+            postcode: '10044'
+        }
+    },
+        {
+        firstName: 'Ricardo',
+        lastName: 'Gonzalez Penuela',
+        orcid: '0000-0002-1344-3850',
+        email: 'jc2884@cornell.edu',
+        image: 'https://media.licdn.com/dms/image/v2/D4E03AQGSLRg2sLFKfA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709603911524?e=1756339200&v=beta&t=NHCFNPqFdWkfgvpgdTjf4ht_wHeLYWIwcutBFKysHFo',
+        url: 'https://rgonzalezp.github.io/',
         affiliation: {
             institution: 'Cornell Tech',
             department: 'Information Science',
@@ -162,6 +200,25 @@ export const people = [
             lab: 'Virtual Embodiment Lab',
             url: 'https://virtualembodimentlab.com/',
             streetAddress: '471 Mann Library',
+            city: 'Ithaca',
+            state: 'NY',
+            country: 'USA',
+            postcode: '14853'
+        }
+    },
+        {
+        firstName: 'Saleh',
+        lastName: 'Kalantari',
+        orcid: '0000-0002-0472-5493',
+        email: 'sk3268@cornell.edu',
+        image: 'https://www.human.cornell.edu/sites/default/files/styles/square_bio_photo/public/2023-10/Kalantari_Saleh_10-17-22_Vert%20%281%29.jpeg?h=3d08dc35&itok=7Q2i0tMT',
+        url: 'https://www.human.cornell.edu/people/sk3268',
+        affiliation: {
+            institution: 'Cornell University',
+            department: 'Human Centered Design',
+            lab: 'Design and Augmented Intelligence Lab ',
+            url: 'https://dail.human.cornell.edu/',
+            streetAddress: ' 2427 Martha Van Rensselaer Hall',
             city: 'Ithaca',
             state: 'NY',
             country: 'USA',
@@ -557,6 +614,26 @@ export const people = [
             postcode: '14853'
         }
     },
+        {
+        firstName: 'Miki',
+        middleName: '',
+        lastName: 'Matsumuro',
+        orcid: '0000-0002-0647-1263',
+        email: 'mm3398@cornell.edu',
+        image: 'https://www.jp.honda-ri.com/wp-content/uploads/2025/01/DSC00908_r2.jpg',
+        url: 'https://www.jp.honda-ri.com/en/members/matsumuro-miki/',
+        affiliation: {
+            institution: 'Honda Research Institute Japan',
+            department: 'Research Division',
+            lab: "",
+            url: 'https://www.jp.honda-ri.com/en/',
+            streetAddress: '8-1 Honcho',
+            city: 'Wakō-shi',
+            state: 'Saitama',
+            country: 'Japan',
+            postcode: '351-0188'
+        }
+    },
     {
         firstName: 'Yeonju',
         middleName: '',
@@ -755,6 +832,226 @@ export const people = [
             state: 'IA',
             country: 'USA',
             postcode: '50011'
+        }
+    },
+    {
+        firstName: 'Amanda',
+        middleName: '',
+        lastName: 'Newendorp',
+        orcid: '0000-0002-7327-1253',
+        email: 'aknowen@iastate.edu',
+        image: 'https://media.licdn.com/dms/image/v2/C5603AQFp-AjiiDSFYA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1663362827799?e=1756339200&v=beta&t=JxeB8Sdy9SO43zmoXGHes0hrcsskuk9qBStxv_lBerE',
+        url: 'https://www.linkedin.com/in/amanda-newendorp/',
+        affiliation: {
+            institution: 'Iowa State University',
+            department: 'Human Computer Interaction',
+            lab: 'VRAC',
+            url: 'https://www.vrac.iastate.edu/',
+            streetAddress: '537 Bissell Rd',
+            city: 'Ames',
+            state: 'IA',
+            country: 'USA',
+            postcode: '50011'
+        }
+    },
+    {
+        firstName: 'Surya',
+        middleName: '',
+        lastName: 'Sharma',
+        orcid: 'SS',
+        email: 'ssharma@ithaca.edu',
+        image: 'https://media.licdn.com/dms/image/v2/D4D03AQFKe-Z8Ux4tzQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715548402335?e=1756339200&v=beta&t=LfYRAAYwQjzd_2gTLGaeSiGjQeoxx94JikVmqWuYQPM',
+        url: 'https://www.linkedin.com/in/suryasharma4/',
+        affiliation: {
+            institution: 'Ithaca College',
+            department: '',
+            lab: '',
+            url: '',
+            streetAddress: '953 Danby Road',
+            city: 'Ithaca',
+            state: 'NY',
+            country: 'USA',
+            postcode: '14850'
+        }
+    },
+    {
+        firstName: 'Lucas',
+        middleName: 'A.',
+        lastName: 'Lovig',
+        orcid: 'LL',
+        email: '',
+        image: '',
+        url: '',
+        affiliation: {
+            institution: '',
+            department: '',
+            lab: '',
+            url: '',
+            streetAddress: '',
+            city: '',
+            state: '',
+            country: '',
+            postcode: ''
+        }
+    },
+    {
+        firstName: 'Ghazal',
+        middleName: 'Shah',
+        lastName: 'Abadi',
+        orcid: 'GSA',
+        email: '',
+        image: '',
+        url: '',
+        affiliation: {
+            institution: '',
+            department: '',
+            lab: '',
+            url: '',
+            streetAddress: '',
+            city: '',
+            state: '',
+            country: '',
+            postcode: ''
+        }
+    },
+    {
+        firstName: 'Ashley',
+        middleName: 'B.',
+        lastName: 'Deal',
+        orcid: 'AD',
+        email: '',
+        image: '',
+        url: '',
+        affiliation: {
+            institution: '',
+            department: '',
+            lab: '',
+            url: '',
+            streetAddress: '',
+            city: '',
+            state: '',
+            country: '',
+            postcode: ''
+        }
+    },
+    {
+        firstName: 'Hila',
+        middleName: '',
+        lastName: 'Sabouni',
+        orcid: 'HS',
+        email: '',
+        image: '',
+        url: '',
+        affiliation: {
+            institution: '',
+            department: '',
+            lab: '',
+            url: '',
+            streetAddress: '',
+            city: '',
+            state: '',
+            country: '',
+            postcode: ''
+        }
+    },
+    {
+        firstName: 'Maral',
+        middleName: 'Jafari',
+        lastName: 'Ranjbar',
+        orcid: 'MJR',
+        email: '',
+        image: '',
+        url: '',
+        affiliation: {
+            institution: '',
+            department: '',
+            lab: '',
+            url: '',
+            streetAddress: '',
+            city: '',
+            state: '',
+            country: '',
+            postcode: ''
+        }
+    },
+    {
+        firstName: 'Nina',
+        middleName: '',
+        lastName: 'Lauharatanahirun',
+        orcid: 'NL',
+        email: '',
+        image: '',
+        url: '',
+        affiliation: {
+            institution: '',
+            department: '',
+            lab: '',
+            url: '',
+            streetAddress: '',
+            city: '',
+            state: '',
+            country: '',
+            postcode: ''
+        }
+    },
+    {
+        firstName: 'Eden',
+        middleName: '',
+        lastName: 'Shaveet',
+        orcid: 'ES',
+        email: '',
+        image: '',
+        url: '',
+        affiliation: {
+            institution: '',
+            department: '',
+            lab: '',
+            url: '',
+            streetAddress: '',
+            city: '',
+            state: '',
+            country: '',
+            postcode: ''
+        }
+    },
+    {
+        firstName: 'Hannah',
+        middleName: '',
+        lastName: 'Mitchell',
+        orcid: 'HM',
+        email: '',
+        image: '',
+        url: '',
+        affiliation: {
+            institution: '',
+            department: '',
+            lab: '',
+            url: '',
+            streetAddress: '',
+            city: '',
+            state: '',
+            country: '',
+            postcode: ''
+        }
+    },
+    {
+        firstName: 'Tanzeem',
+        middleName: '',
+        lastName: 'Choudhury',
+        orcid: 'TC',
+        email: '',
+        image: '',
+        url: '',
+        affiliation: {
+            institution: '',
+            department: '',
+            lab: '',
+            url: '',
+            streetAddress: '',
+            city: '',
+            state: '',
+            country: '',
+            postcode: ''
         }
     }
 ];
