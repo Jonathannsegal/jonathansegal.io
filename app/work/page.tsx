@@ -133,7 +133,7 @@ function Education({ degree, field, school, schoolUrl, schoolSeal, url, location
 
   return (
     <div className='mb-6 flex'>
-      <Image src={schoolSeal} alt={`Seal of ${school}`} width={12} height={12} className='w-12 h-12 mr-4 dark:invert' />
+      <Image src={schoolSeal} alt={`Seal of ${school}`} width={12} height={12} loading="eager" priority className='w-12 h-12 mr-4 dark:invert' />
       <div className='flex-1'>
         <Link href={url} className='text-md sm:text-lg font-semibold text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-500'>
           {degree}{field && ` in ${field}`}

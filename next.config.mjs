@@ -33,7 +33,11 @@ const nextConfig = {
 const ContentSecurityPolicy = `
     default-src 'self' vercel.live;
     worker-src 'self' blob:;
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.vercel-insights.com vercel.live va.vercel-scripts.com;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline'
+      cdn.vercel-insights.com
+      vercel.live
+      va.vercel-scripts.com
+      static.cloudflareinsights.com;
     style-src 'self' 'unsafe-inline';
     img-src * blob: data:;
     media-src 'none';
