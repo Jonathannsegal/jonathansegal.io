@@ -62,7 +62,7 @@ export default function Page() {
             <h1 className='font-bold text-2xl mb-8 tracking-tighter'>hi, I'm jonathan segal</h1>
             <p className='prose prose-neutral dark:prose-invert'>
                 {`I'm currently working on my Ph.D. in Information Science at `}
-                <Link href='https://infosci.cornell.edu/content/segal'>Cornell Tech</Link>
+                <Link href='https://bowers.cornell.edu/'>Cornell Tech</Link>
                 {` and am a member of `}
                 <Link href='https://airlab.cis.cornell.edu/'>AIRLab</Link>
                 {` led by `}
