@@ -463,7 +463,7 @@ export default function Page() {
         field='Information Science'
         school='Cornell University'
         schoolUrl='https://www.cornell.edu'
-        schoolSeal='./cornell.svg'
+        schoolSeal='./images/cornell.svg'
         location='New York, New York, United States'
         url='https://infosci.cornell.edu/'
         description='Concentrated on augmented and virtual reality systems to improve medical workflows.'
@@ -475,10 +475,11 @@ export default function Page() {
         ]}
         showCourses={false}
         advisors={[
-          { orcid: 'AT', role: 'Advisors' },
+          { orcid: '0000-0003-1285-6431', role: 'Advisors' },
           { orcid: '0000-0001-5240-6166', role: 'Advisors' },
           { orcid: '0000-0002-0472-5493', role: 'Advisors' },
-          { orcid: '0000-0003-1469-2696', role: 'Advisors' }
+          { orcid: '0000-0003-1469-2696', role: 'Advisors' },
+          { orcid: '0000-0001-6810-4189', role: 'Advisors' }
         ]}
         dissertationTitle={'Designing Customizable Augmented Reality Interfaces to Empower Emergency Medical Teams'}
       />
@@ -487,7 +488,7 @@ export default function Page() {
         field=''
         school='University of New South Wales'
         schoolUrl='https://www.unsw.edu.au/'
-        schoolSeal='./unsw.svg'
+        schoolSeal='./images/unsw.svg'
         location='Sydney, New South Wales, Australia'
         url='https://www.unsw.edu.au/'
         description='Focused on developing software solutions for scalable systems.'
@@ -506,7 +507,7 @@ export default function Page() {
         field='Software Engineering'
         school='Iowa State University'
         schoolUrl='https://www.iastate.edu'
-        schoolSeal='./isu.svg'
+        schoolSeal='./images/isu.svg'
         location='Ames, Iowa, United States'
         url='https://www.iastate.edu/cs'
         description='Focused on developing software solutions for scalable systems.'
@@ -529,7 +530,7 @@ export default function Page() {
         role='Research Assistant'
         lab='Artificial Intelligence and Robotics Lab'
         labUrl='https://airlab.cis.cornell.edu/'
-        lead='AT'
+        lead='0000-0003-1285-6431'
         institution='Cornell Tech'
         institutionUrl='https://tech.cornell.edu/'
         location='New York, New York, United States'
@@ -582,7 +583,7 @@ export default function Page() {
         title={'Practical Applications in Machine Learning'}
         semester={'Spring'}
         year={'2025'}
-        instructor={'AT'}
+        instructor={'0000-0003-1285-6431'}
         role={'Teaching Assistant'}
         responsibilities={''}
         university={'Cornell Tech'}
@@ -632,7 +633,7 @@ export default function Page() {
       <Publication
         author={[
           'ES', // Shaveet, E.
-          '0000-0002-8506-3785', // Segal, J. I.
+          '0000-0002-8506-3785',
           'HM', // Mitchell, H.
           'TC' // Choudhury, T.
         ]}
@@ -640,25 +641,25 @@ export default function Page() {
         year='2025'
         title='Towards Gaze Tracking on Short Form Videos for Body Image Disturbance-Driven Condition Detection and Self-Monitoring'
         conference='CHI Workshop'
-        address='' // Add address if known
-        date='' // Add date if known
-        doi='' // Add DOI/URL if available
+        address=''
+        date=''
+        doi=''
       />
       <Publication
         author={[
-          '0000-0002-8506-3785', // Segal, J.
-          '0009-0006-5594-1635', // Pugh, C.
+          '0000-0002-8506-3785',
+          '0009-0006-5594-1635',
           'JN', // Nicoly, J.
           'FO', // Ortega, F.
-          'AT' // Taylor, A.
+          '0000-0003-1285-6431'
         ]}
         cofirst={false}
         year='2024'
         title='Enhancing Emergency Room Response through Hands-Free Augmented Reality Assistance'
         conference='Immersive Media in Medicine Symposium'
-        address='' // Add address if known
-        date='' // Add date if known
-        doi='' // Add DOI/URL if available
+        address=''
+        date=''
+        doi=''
       />
       <Publication
         author={[
@@ -666,7 +667,7 @@ export default function Page() {
           '0009-0006-5594-1635',
           'JN',
           'FO',
-          'AT'
+          '0000-0003-1285-6431'
         ]}
         cofirst={false}
         year='2024'

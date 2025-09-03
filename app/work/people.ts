@@ -111,7 +111,7 @@ export const people = [
             postcode: '10044'
         }
     },
-        {
+    {
         firstName: 'Harald',
         lastName: 'Haraldsson',
         orcid: 'HH',
@@ -149,7 +149,7 @@ export const people = [
             postcode: '10044'
         }
     },
-        {
+    {
         firstName: 'Ricardo',
         lastName: 'Gonzalez Penuela',
         orcid: '0000-0002-1344-3850',
@@ -206,7 +206,7 @@ export const people = [
             postcode: '14853'
         }
     },
-        {
+    {
         firstName: 'Saleh',
         lastName: 'Kalantari',
         orcid: '0000-0002-0472-5493',
@@ -578,7 +578,7 @@ export const people = [
         firstName: 'Angelique',
         middleName: 'B',
         lastName: 'Taylor',
-        orcid: 'AT',
+        orcid: '0000-0003-1285-6431',
         email: 'amt298@cornell.edu',
         image: 'https://static.wixstatic.com/media/aead8d_a143393a1950466dbd0c4978cebfdc7b~mv2_d_4000_6000_s_4_2.jpg/v1/fill/w_1372,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/angelique.jpg',
         url: 'https://www.angeliquemtaylor.com/',
@@ -592,6 +592,26 @@ export const people = [
             state: 'NY',
             country: 'USA',
             postcode: '10044'
+        }
+    },
+    {
+        firstName: 'Jonathan',
+        middleName: '',
+        lastName: 'St. George',
+        orcid: '0000-0001-6810-4189',
+        email: 'jos7007@med.cornell.edu ',
+        image: 'https://images.med.cornell.edu/headshots/jos7007.jpg',
+        url: 'https://weillcornell.org/jonathan-st-george-md',
+        affiliation: {
+            institution: 'Weill Cornell Medicine',
+            department: 'Emergency Medicine',
+            lab: '',
+            url: '',
+            streetAddress: '525 East 68th Street',
+            city: 'New York',
+            state: 'NY',
+            country: 'USA',
+            postcode: '10065'
         }
     },
     {
@@ -614,7 +634,7 @@ export const people = [
             postcode: '14853'
         }
     },
-        {
+    {
         firstName: 'Miki',
         middleName: '',
         lastName: 'Matsumuro',
@@ -814,7 +834,7 @@ export const people = [
             postcode: '80523'
         }
     },
-        {
+    {
         firstName: 'Stephen',
         middleName: '',
         lastName: 'Fieffer',
