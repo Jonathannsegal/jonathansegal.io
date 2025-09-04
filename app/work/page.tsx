@@ -152,10 +152,10 @@ function Education({ degree, field, school, schoolUrl, schoolSeal, url, location
           </span>
         </div>
         {dissertationTitle && (
-        <div className="mt-1 text-sm text-pretty">
-          <strong>Thesis:</strong> {dissertationTitle}
-        </div>
-      )}
+          <div className="mt-1 text-sm text-pretty">
+            <strong>Thesis:</strong> {dissertationTitle}
+          </div>
+        )}
         {advisors && advisors.length > 0 && (
           <div className='mt-1 text-sm'>
             {advisorsDisplay}
@@ -252,16 +252,6 @@ function Talk({ title, venue, link }) {
   );
 }
 
-function Project({ title, event, description, url }) {
-  return (
-    <div className='mb-4'>
-      <p className='text-md font-medium text-gray-800 dark:text-gray-200'>
-        {title}, {event}
-      </p>
-    </div>
-  );
-}
-
 function Service({ role, organization, organizationShortName, organizationUrl, startDate, endDate, description }) {
   const start = parseISO(startDate);
   let end, durationString, totalDuration;
@@ -309,6 +299,87 @@ function Service({ role, organization, organizationShortName, organizationUrl, s
   );
 }
 
+function Artifact({
+  name,
+  description,
+  releaseUrl,
+  codeUrl,
+  docsUrl,
+  version,
+  releasedAt
+}: {
+  name: string;
+  description?: string;
+  releaseUrl?: string;
+  codeUrl: string;
+  docsUrl?: string;
+  version?: string;
+  releasedAt?: string;
+}) {
+  const dateLabel = releasedAt
+    ? new Date(releasedAt).toLocaleDateString(undefined, {
+      year: 'numeric',
+      month: 'short',
+      day: '2-digit'
+    })
+    : null;
+
+  return (
+    <div className='mb-4'>
+      <div className='text-md font-medium text-gray-800 dark:text-gray-200'>
+        {name}
+        {version && (
+          <span className='ml-2 text-xs font-normal text-gray-600 dark:text-gray-400'>
+            {version}
+          </span>
+        )}
+        {dateLabel && (
+          <span className='ml-2 text-xs text-gray-500 dark:text-gray-400'>
+            · {dateLabel}
+          </span>
+        )}
+      </div>
+
+      {description && (
+        <p className='text-sm text-gray-700 dark:text-gray-300 mt-0.5'>
+          {description}
+        </p>
+      )}
+
+      <div className='mt-1 flex flex-wrap gap-3 text-sm'>
+        {releaseUrl && (
+          <Link
+            href={releaseUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-blue-700 hover:underline dark:text-blue-400'
+          >
+            Released
+          </Link>
+        )}
+        <Link
+          href={codeUrl}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='text-blue-700 hover:underline dark:text-blue-400'
+        >
+          Code
+        </Link>
+        {docsUrl && (
+          <Link
+            href={docsUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-blue-700 hover:underline dark:text-blue-400'
+          >
+            Docs
+          </Link>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function Page() {
   return (
     <section>
@@ -335,7 +406,7 @@ export default function Page() {
           '0000-0001-8229-1099',
           '0000-0001-6386-4787',
           '0000-0001-5240-6166',
-          '0000-0002-5332-029X' 
+          '0000-0002-5332-029X'
         ]}
         cofirst={false}
         year='2025'
@@ -985,7 +1056,7 @@ export default function Page() {
       <Experience
         title='Co-Strategic Officer'
         company="PhD's at Cornell Tech (PACT)"
-        companyUrl='https://tech.cornell.edu/'
+        companyUrl='https://pact.tech.cornell.edu/'
         location='New York, New York, United States'
         startDate='2025-03-01'
         endDate='2026-05-01'
@@ -1028,15 +1099,81 @@ export default function Page() {
         description='Organized teambuilding and transportation to 7 hackathons with an average of 10+ students. Grew club to 70+ members by recruiting through university events and advertisements.'
       />
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
-      <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Software Artifacts and Datasets</h1>
-      <p>Social Sensory Sub</p>
+      <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Artifacts</h1>
+      <Artifact
+        name="Mazeworld"
+        description="Welcome to MazeWorld, this project has evolved over time but the goal is still the exploration of how to evaluate team preformance. The idea is to have participants solve a maze where they are given different roles and tasks to complete. The roles consist of an explorer, collector, and tactical which have different interdependant roles. The explorer is responsible for navigating the maze, the collector is responsible for collecting coins, and the tactical is responsible for directing the explorer and collector. There is still quite a bit to be done on the project so hopefully this document will help explain the current state of the project as well as future goals."
+        releaseUrl="https://doi.org/10.1007/978-3-031-94162-7_30"
+        codeUrl="https://github.com/virtual-embodiment-lab/teamwork"
+        docsUrl="https://github.com/virtual-embodiment-lab/teamwork/blob/main/README.md"
+        version="v3.0.0"
+        releasedAt="2024-09-19"
+      />
+      <Artifact
+        name="Multi-Scale Cognitive Interaction Model of Instrument Operations at the Linac Coherent Light Source"
+        description="Our overall project employs cognitive engineering methodologies with the goal of improving experimental efficiency and increasing scientific productivity at LCLS by refining experimental interfaces and workflows, simplifying tasks, reducing errors, and improving operator safety and stress. Here we describe a multi-agent, multi-scale computational cognitive interaction model of instrument operations at LCLS. Our model simulates aspects of human cognition at multiple cognitive and temporal scales, ranging from seconds to hours, and among agents playing multiple roles, including instrument operator, real time data analyst, and experiment manager. The model can roughly predict impacts stemming from proposed changes to operational interfaces and workflows."
+        releaseUrl="https://doi.org/10.1063/5.0239302"
+        codeUrl="https://github.com/Jonathannsegal/lclshfe"
+        docsUrl="https://youtube.com/playlist?list=PLI13S4Z1cbXggy98pDXjqnVnnoekohF2f&si=iSILSfbW7d4ItXbh"
+        version="v1.0.0"
+        releasedAt="2023-10-03"
+      />
+      <Artifact
+        name="Unity Tutorial"
+        description="This guide is a great starting point to understanding how to use Unity and create immersive experiences for VR research. I have compiled a list of resources that will help you get started with Unity, C#, and Blender. If there is anything that you think should be added feel free to make a PR to add to this document."
+        releaseUrl="https://github.com/virtual-embodiment-lab/unity-tutorial/blob/main/README.md"
+        codeUrl="https://github.com/virtual-embodiment-lab/unity-tutorial"
+        version="v1.0.0"
+        releasedAt="2023-10-19"
+      />
+      <Artifact
+        name="Social Sensory Sub"
+        description="The SocialCueSwitch Unity package enhances virtual avatar interactions using audio and visual cues. It provides feedback on proximity, observation, and gestures, offering a more immersive experience."
+        releaseUrl="https://assetstore.unity.com/packages/tools/utilities/socialcueswitch-259078"
+        codeUrl="https://github.com/virtual-embodiment-lab/SocialCueSwitch"
+        docsUrl="https://dl.acm.org/doi/full/10.1145/3613905.3651109"
+        version="v1.0.0"
+        releasedAt="2023-10-03"
+      />
+      <Artifact
+        name="GridAI: Iowa State Capstone Project"
+        description="GridAI Cloud-based Machine Deep Learning for Power Grid Data Analytics"
+        releaseUrl="https://sdmay22-35.sd.ece.iastate.edu/"
+        codeUrl="https://github.com/Jonathannsegal/GridAI?tab=readme-ov-file"
+        docsUrl="https://sdmay22-35.sd.ece.iastate.edu/docs.html"
+        version="v1.0.0"
+        releasedAt="2022-05-01"
+      />
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Personal Projects</h1>
-      <Project
-        title='Vital AR'
-        event='Cornell Health Hackathon'
-        description=''
-        url=''
+      <Artifact
+        name="dotfiles"
+        description="My personal configuration files for various tools and applications, including Vim, Zsh, and Git. These files help me customize my development environment to improve productivity and workflow."
+        codeUrl="https://github.com/Jonathannsegal/dotfiles"
+      />
+      <Artifact
+        name="Map Tab"
+        description="Chrome extension that shows you a cool place when you open a new tab!"
+        releaseUrl="https://maptab.app/"
+        codeUrl="https://github.com/Jonathannsegal/map_tab"
+        docsUrl="https://github.com/Jonathannsegal/map_tab/blob/master/README.md"
+        version="v0.3.0"
+        releasedAt="2020-07-01"
+      />
+      <Artifact
+        name="CryptoBonds"
+        description="CryptoBonds is a blockchain application that was built using Hyperledger Sawtooth. The goal of the project is to make a stable coin with its value linked to real life company bonds. CryptoBonds acts as a clearing firm and monitors transactions between the banks and the traders. Traders are able to exchange cryptobonds and other cryptocurrencies with other users."
+        releaseUrl="https://github.com/crypto-bonds/cryptobonds-web-server"
+        codeUrl="https://github.com/crypto-bonds"
+        version="v1.0.0"
+        releasedAt="2019-02-26"
+      />
+      <Artifact
+        name="Spring Home"
+        description="HTML5 platformer, touch controls supported. Built for Global Game Jam 2019"
+        releaseUrl="https://springhome-30e566b647e7.herokuapp.com/menu/"
+        codeUrl="https://github.com/Jonathannsegal/spring_home"
+        releasedAt="2019-01-25"
       />
       <hr className='my-6 border-neutral-100 dark:border-neutral-800' />
       <h1 className='font-medium text-2xl mb-6 tracking-tighter'>Mentoring</h1>
