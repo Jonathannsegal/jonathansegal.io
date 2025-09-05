@@ -34,16 +34,19 @@
     "singleQuote": true
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
     "raw-loader": "^4.0.2"
   },
   "pnpm": {
     "ignoredBuiltDependencies": [
       "@vercel/speed-insights",
       "es5-ext"
+    ],
+    "onlyBuiltDependencies": [
+      "unrs-resolver"
     ]
   }
 }

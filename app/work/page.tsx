@@ -410,9 +410,9 @@ export default async function Page() {
         </Section>
       )}
 
-      {!!work.personalProjects?.length && (
-        <Section title="Personal Projects">
-          <List data={work.personalProjects} render={(a, i) => <Artifact key={i} {...a} />} />
+      {!!work.projects?.length && (
+        <Section title="Projects">
+          <List data={work.projects} render={(a, i) => <Artifact key={i} {...a} />} />
         </Section>
       )}
 

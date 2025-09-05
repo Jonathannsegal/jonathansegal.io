@@ -348,30 +348,30 @@ export default function DownloadCV() {
       }
 
       /* ---------- Personal Projects ---------- */
-      if (work.personalProjects?.length) {
+      if (work.projects?.length) {
         h1('Personal Projects');
-        work.personalProjects.forEach((a: any) => {
+        work.projects.forEach((a: any) => {
           h2(`${a.name}${artifactLine(a)}`);
           if (a.description) body(a.description);
-          const links: Array<{ label: string; url?: string }> = [
-            { label: 'Released', url: a.releaseUrl },
-            { label: 'Code', url: a.codeUrl },
-            { label: 'Docs', url: a.docsUrl },
-          ].filter((x) => x.url);
-          if (links.length) {
-            const startY = doc.y;
-            let first = true;
-            links.forEach((L) => {
-              if (!L.url) return;
-              doc.fillColor(black).font(fontBody).fontSize(10.25).text(first ? L.label : `   ${L.label}`, { continued: true });
-              const w = doc.widthOfString(L.label);
-              const h = doc.currentLineHeight();
-              const x = doc.x - w;
-              doc.link(x, startY, w, h, L.url);
-              first = false;
-            });
-            doc.text('');
-          }
+          // const links: Array<{ label: string; url?: string }> = [
+          //   { label: 'Released', url: a.releaseUrl },
+          //   { label: 'Code', url: a.codeUrl },
+          //   { label: 'Docs', url: a.docsUrl },
+          // ].filter((x) => x.url);
+          // if (links.length) {
+          //   const startY = doc.y;
+          //   let first = true;
+          //   links.forEach((L) => {
+          //     if (!L.url) return;
+          //     doc.fillColor(black).font(fontBody).fontSize(10.25).text(first ? L.label : `   ${L.label}`, { continued: true });
+          //     const w = doc.widthOfString(L.label);
+          //     const h = doc.currentLineHeight();
+          //     const x = doc.x - w;
+          //     doc.link(x, startY, w, h, L.url);
+          //     first = false;
+          //   });
+          //   doc.text('');
+          // }
           doc.moveDown(0.15);
         });
       }

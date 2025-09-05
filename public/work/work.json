@@ -814,7 +814,9 @@
       "docsUrl": "https://sdmay22-35.sd.ece.iastate.edu/docs.html",
       "version": "v1.0.0",
       "releasedAt": "2022-05-01"
-    },
+    }
+  ],
+  "projects": [
     {
       "name": "dotfiles",
       "description": "My personal configuration files for various tools and applications, including Vim, Zsh, and Git. These files help me customize my development environment to improve productivity and workflow.",
