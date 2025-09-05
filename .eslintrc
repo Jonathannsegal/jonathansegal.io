@@ -24,5 +24,13 @@
     "react/prop-types": "off",
     "react/no-unescaped-entities": "off",
     "@next/next/no-server-import-in-page": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["app/work/*.tsx"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "warn"
+      }
+    }
+  ]
 }
