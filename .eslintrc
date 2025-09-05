@@ -3,25 +3,26 @@
     "browser": true,
     "es2021": true
   },
-  "extends": "next",
-  "parser": [
+  "extends": [
     "eslint:recommended",
-    "@typescript-eslint/parser",
+    "plugin:@typescript-eslint/recommended",
     "next/core-web-vitals"
   ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": 12,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "plugins": [
     "@typescript-eslint"
   ],
   "rules": {
-    "react/prop-types": 0,
-    "react/no-unescaped-entities": 0,
-    "@next/next/no-server-import-in-page": 0
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-server-import-in-page": "off"
   }
 }

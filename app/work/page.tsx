@@ -101,22 +101,24 @@ const Class = ({ people, subject, number, url, title, semester, year, instructor
   );
 };
 
+const personLabel = (p?: Person) =>
+  p ? `${p.firstName} ${p.lastName}` : 'Unknown';
+
 const Education = ({ people, degree, field, school, schoolUrl, schoolSeal, url, location, startYear, endYear, courses, showCourses = false, advisors = [], dissertationTitle }: any) => {
   const grouped = advisors.reduce((acc: any, a: any) => ((acc[a.role] ??= []).push(a.orcid), acc), {} as Record<string, string[]>);
   const advisorsDisplay = Object.entries(grouped).map(([role, ids]) => (
     <span key={role} className="mr-2">
       {role}:{' '}
-      {Array.isArray(ids)
-        ? ids.map((id: string, i: number) => {
-            const p = findPerson(people, id);
-            return (
-              <span key={id}>
-                {p ? p.name : 'Unknown'}
-                {i < ids.length - 1 ? ', ' : ''}
-              </span>
-            );
-          })
-        : null}
+      {Array.isArray(ids) &&
+        ids.map((id: string, i: number) => {
+          const p = findPerson(people, id);
+          return (
+            <span key={id}>
+              {personLabel(p)}
+              {i < ids.length - 1 ? ', ' : ''}
+            </span>
+          );
+        })}
     </span>
   ));
   const years = startYear === endYear ? startYear : `${startYear} - ${endYear}`;
