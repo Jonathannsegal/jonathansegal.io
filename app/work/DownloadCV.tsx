@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import blobStream from 'blob-stream';
 
 type Person = { firstName: string; middleName?: string; lastName: string; orcid: string; url?: string };
