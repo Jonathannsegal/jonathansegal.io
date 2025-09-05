@@ -106,15 +106,17 @@ const Education = ({ people, degree, field, school, schoolUrl, schoolSeal, url, 
   const advisorsDisplay = Object.entries(grouped).map(([role, ids]) => (
     <span key={role} className="mr-2">
       {role}:{' '}
-      {ids.map((id: string, i: number) => {
-        const p = findPerson(people, id);
-        return (
-          <span key={id}>
-            {i ? ', ' : ''}
-            <A href={p?.url || '#'}>{nameInitial(p)}</A>
-          </span>
-        );
-      })}
+      {Array.isArray(ids)
+        ? ids.map((id: string, i: number) => {
+            const p = findPerson(people, id);
+            return (
+              <span key={id}>
+                {p ? p.name : 'Unknown'}
+                {i < ids.length - 1 ? ', ' : ''}
+              </span>
+            );
+          })
+        : null}
     </span>
   ));
   const years = startYear === endYear ? startYear : `${startYear} - ${endYear}`;
