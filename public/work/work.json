@@ -773,7 +773,7 @@
   "artifacts": [
     {
       "name": "Mazeworld",
-      "description": "Welcome to MazeWorld, this project has evolved over time but the goal is still the exploration of how to evaluate team preformance. The idea is to have participants solve a maze where they are given different roles and tasks to complete. The roles consist of an explorer, collector, and tactical which have different interdependant roles. The explorer is responsible for navigating the maze, the collector is responsible for collecting coins, and the tactical is responsible for directing the explorer and collector. There is still quite a bit to be done on the project so hopefully this document will help explain the current state of the project as well as future goals.",
+      "description": "Welcome to MazeWorld, this project has evolved over time but the goal is still the exploration of how to evaluate team preformance.",
       "releaseUrl": "https://doi.org/10.1007/978-3-031-94162-7_30",
       "codeUrl": "https://github.com/virtual-embodiment-lab/teamwork",
       "docsUrl": "https://github.com/virtual-embodiment-lab/teamwork/blob/main/README.md",
@@ -782,7 +782,7 @@
     },
     {
       "name": "Multi-Scale Cognitive Interaction Model of Instrument Operations at the Linac Coherent Light Source",
-      "description": "Our overall project employs cognitive engineering methodologies with the goal of improving experimental efficiency and increasing scientific productivity at LCLS by refining experimental interfaces and workflows, simplifying tasks, reducing errors, and improving operator safety and stress. Here we describe a multi-agent, multi-scale computational cognitive interaction model of instrument operations at LCLS. Our model simulates aspects of human cognition at multiple cognitive and temporal scales, ranging from seconds to hours, and among agents playing multiple roles, including instrument operator, real time data analyst, and experiment manager. The model can roughly predict impacts stemming from proposed changes to operational interfaces and workflows.",
+      "description": "This project is a multi-agent, multi-scale computational cognitive interaction model of instrument operations at LCLS. The model simulates aspects of human cognition at multiple cognitive and temporal scales, ranging from seconds to hours, and among agents playing multiple roles, including instrument operator, real time data analyst, and experiment manager.",
       "releaseUrl": "https://doi.org/10.1063/5.0239302",
       "codeUrl": "https://github.com/Jonathannsegal/lclshfe",
       "docsUrl": "https://youtube.com/playlist?list=PLI13S4Z1cbXggy98pDXjqnVnnoekohF2f&si=iSILSfbW7d4ItXbh",
