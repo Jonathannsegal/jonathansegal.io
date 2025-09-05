@@ -345,7 +345,7 @@ export default function DownloadCV() {
         //     doc.moveDown(0.1);
         //   }
         //   doc.moveDown(0.15);
-        // });
+        });
       }
 
       /* ---------- Personal Projects ---------- */
